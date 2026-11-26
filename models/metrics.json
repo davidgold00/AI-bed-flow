@@ -1,0 +1,4810 @@
+{
+ "seed": 20261124,
+ "default_threshold": 0.7,
+ "discharge_threshold": 0.5,
+ "note_reader": {
+  "overall": {
+   "notes": 107215,
+   "support": 13322,
+   "tp": 12408,
+   "fp": 143,
+   "fn": 914,
+   "precision": 0.9886064855390009,
+   "recall": 0.9313916829304909,
+   "f1": 0.959146600703436
+  },
+  "by_barrier": {
+   "placement": {
+    "notes": 107215,
+    "support": 4301,
+    "tp": 4031,
+    "fp": 143,
+    "fn": 270,
+    "precision": 0.9657402970771443,
+    "recall": 0.9372239014182748,
+    "f1": 0.9512684365781711
+   },
+   "home_care": {
+    "notes": 107215,
+    "support": 2921,
+    "tp": 2660,
+    "fp": 0,
+    "fn": 261,
+    "precision": 1.0,
+    "recall": 0.9106470386853818,
+    "f1": 0.953234187421609
+   },
+   "insurance_auth": {
+    "notes": 107215,
+    "support": 1952,
+    "tp": 1795,
+    "fp": 0,
+    "fn": 157,
+    "precision": 1.0,
+    "recall": 0.9195696721311475,
+    "f1": 0.9580998131838805
+   },
+   "family_pickup": {
+    "notes": 107215,
+    "support": 1345,
+    "tp": 1277,
+    "fp": 0,
+    "fn": 68,
+    "precision": 1.0,
+    "recall": 0.9494423791821561,
+    "f1": 0.9740655987795576
+   },
+   "transport": {
+    "notes": 107215,
+    "support": 1680,
+    "tp": 1588,
+    "fp": 0,
+    "fn": 92,
+    "precision": 1.0,
+    "recall": 0.9452380952380952,
+    "f1": 0.9718482252141983
+   },
+   "meds_equipment": {
+    "notes": 107215,
+    "support": 1123,
+    "tp": 1057,
+    "fp": 0,
+    "fn": 66,
+    "precision": 1.0,
+    "recall": 0.9412288512911843,
+    "f1": 0.9697247706422019
+   }
+  },
+  "by_payer": {
+   "Commercial": {
+    "notes": 35214,
+    "support": 2888,
+    "tp": 2685,
+    "fp": 58,
+    "fn": 203,
+    "precision": 0.978855267954794,
+    "recall": 0.9297091412742382,
+    "f1": 0.9536494405966969
+   },
+   "Medicaid/CHIP": {
+    "notes": 23904,
+    "support": 2584,
+    "tp": 2401,
+    "fp": 33,
+    "fn": 183,
+    "precision": 0.9864420706655711,
+    "recall": 0.9291795665634675,
+    "f1": 0.9569549621363093
+   },
+   "Medicare": {
+    "notes": 40381,
+    "support": 6985,
+    "tp": 6513,
+    "fp": 38,
+    "fn": 472,
+    "precision": 0.9941993588765075,
+    "recall": 0.9324266284896207,
+    "f1": 0.962322695035461
+   },
+   "Other (VA, workers' comp, auto)": {
+    "notes": 2641,
+    "support": 258,
+    "tp": 242,
+    "fp": 5,
+    "fn": 16,
+    "precision": 0.979757085020243,
+    "recall": 0.937984496124031,
+    "f1": 0.9584158415841584
+   },
+   "Uninsured": {
+    "notes": 5075,
+    "support": 607,
+    "tp": 567,
+    "fp": 9,
+    "fn": 40,
+    "precision": 0.984375,
+    "recall": 0.9341021416803954,
+    "f1": 0.9585798816568047
+   }
+  },
+  "llm": {
+   "overall": {
+    "notes": 1319,
+    "support": 619,
+    "tp": 580,
+    "fp": 4,
+    "fn": 39,
+    "precision": 0.9931506849315068,
+    "recall": 0.9369951534733441,
+    "f1": 0.9642560266001663
+   },
+   "by_barrier": {
+    "placement": {
+     "notes": 1319,
+     "support": 112,
+     "tp": 105,
+     "fp": 0,
+     "fn": 7,
+     "precision": 1.0,
+     "recall": 0.9375,
+     "f1": 0.967741935483871
+    },
+    "home_care": {
+     "notes": 1319,
+     "support": 130,
+     "tp": 121,
+     "fp": 0,
+     "fn": 9,
+     "precision": 1.0,
+     "recall": 0.9307692307692308,
+     "f1": 0.9641434262948207
+    },
+    "insurance_auth": {
+     "notes": 1319,
+     "support": 104,
+     "tp": 101,
+     "fp": 0,
+     "fn": 3,
+     "precision": 1.0,
+     "recall": 0.9711538461538461,
+     "f1": 0.9853658536585366
+    },
+    "family_pickup": {
+     "notes": 1319,
+     "support": 72,
+     "tp": 66,
+     "fp": 0,
+     "fn": 6,
+     "precision": 1.0,
+     "recall": 0.9166666666666666,
+     "f1": 0.9565217391304348
+    },
+    "transport": {
+     "notes": 1319,
+     "support": 109,
+     "tp": 103,
+     "fp": 1,
+     "fn": 6,
+     "precision": 0.9903846153846154,
+     "recall": 0.944954128440367,
+     "f1": 0.9671361502347418
+    },
+    "meds_equipment": {
+     "notes": 1319,
+     "support": 92,
+     "tp": 84,
+     "fp": 3,
+     "fn": 8,
+     "precision": 0.9655172413793104,
+     "recall": 0.9130434782608695,
+     "f1": 0.9385474860335196
+    }
+   },
+   "by_payer": {
+    "Commercial": {
+     "notes": 327,
+     "support": 187,
+     "tp": 177,
+     "fp": 1,
+     "fn": 10,
+     "precision": 0.9943820224719101,
+     "recall": 0.946524064171123,
+     "f1": 0.9698630136986301
+    },
+    "Medicaid/CHIP": {
+     "notes": 326,
+     "support": 186,
+     "tp": 173,
+     "fp": 1,
+     "fn": 13,
+     "precision": 0.9942528735632183,
+     "recall": 0.9301075268817204,
+     "f1": 0.9611111111111111
+    },
+    "Medicare": {
+     "notes": 349,
+     "support": 209,
+     "tp": 196,
+     "fp": 2,
+     "fn": 13,
+     "precision": 0.98989898989899,
+     "recall": 0.937799043062201,
+     "f1": 0.9631449631449631
+    },
+    "Other (VA, workers' comp, auto)": {
+     "notes": 140,
+     "support": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "Uninsured": {
+     "notes": 177,
+     "support": 37,
+     "tp": 34,
+     "fp": 0,
+     "fn": 3,
+     "precision": 1.0,
+     "recall": 0.918918918918919,
+     "f1": 0.9577464788732394
+    }
+   },
+   "sample_n": 1319,
+   "sample_labelled_barriers": 619,
+   "sample_fallback_notes": 2,
+   "sample": "B (sealed)",
+   "model": "llama3.2:3b",
+   "prompt_version": "v1-2241325901",
+   "guard_version": "g2"
+  },
+  "rules": {
+   "overall": {
+    "notes": 1319,
+    "support": 619,
+    "tp": 586,
+    "fp": 0,
+    "fn": 33,
+    "precision": 1.0,
+    "recall": 0.9466882067851373,
+    "f1": 0.9726141078838174
+   },
+   "by_barrier": {
+    "placement": {
+     "notes": 1319,
+     "support": 112,
+     "tp": 102,
+     "fp": 0,
+     "fn": 10,
+     "precision": 1.0,
+     "recall": 0.9107142857142857,
+     "f1": 0.9532710280373832
+    },
+    "home_care": {
+     "notes": 1319,
+     "support": 130,
+     "tp": 123,
+     "fp": 0,
+     "fn": 7,
+     "precision": 1.0,
+     "recall": 0.9461538461538461,
+     "f1": 0.9723320158102767
+    },
+    "insurance_auth": {
+     "notes": 1319,
+     "support": 104,
+     "tp": 100,
+     "fp": 0,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.9615384615384616,
+     "f1": 0.9803921568627451
+    },
+    "family_pickup": {
+     "notes": 1319,
+     "support": 72,
+     "tp": 70,
+     "fp": 0,
+     "fn": 2,
+     "precision": 1.0,
+     "recall": 0.9722222222222222,
+     "f1": 0.9859154929577465
+    },
+    "transport": {
+     "notes": 1319,
+     "support": 109,
+     "tp": 105,
+     "fp": 0,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.963302752293578,
+     "f1": 0.9813084112149533
+    },
+    "meds_equipment": {
+     "notes": 1319,
+     "support": 92,
+     "tp": 86,
+     "fp": 0,
+     "fn": 6,
+     "precision": 1.0,
+     "recall": 0.9347826086956522,
+     "f1": 0.9662921348314607
+    }
+   },
+   "by_payer": {
+    "Commercial": {
+     "notes": 327,
+     "support": 187,
+     "tp": 180,
+     "fp": 0,
+     "fn": 7,
+     "precision": 1.0,
+     "recall": 0.9625668449197861,
+     "f1": 0.9809264305177112
+    },
+    "Medicaid/CHIP": {
+     "notes": 326,
+     "support": 186,
+     "tp": 173,
+     "fp": 0,
+     "fn": 13,
+     "precision": 1.0,
+     "recall": 0.9301075268817204,
+     "f1": 0.9637883008356546
+    },
+    "Medicare": {
+     "notes": 349,
+     "support": 209,
+     "tp": 200,
+     "fp": 0,
+     "fn": 9,
+     "precision": 1.0,
+     "recall": 0.9569377990430622,
+     "f1": 0.9779951100244498
+    },
+    "Other (VA, workers' comp, auto)": {
+     "notes": 140,
+     "support": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "Uninsured": {
+     "notes": 177,
+     "support": 37,
+     "tp": 33,
+     "fp": 0,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.8918918918918919,
+     "f1": 0.9428571428571428
+    }
+   },
+   "sample_n": 1319,
+   "sample_labelled_barriers": 619,
+   "sample_fallback_notes": 2,
+   "sample": "B (sealed)",
+   "model": "llama3.2:3b",
+   "prompt_version": "v1-2241325901",
+   "guard_version": "g2"
+  },
+  "combined": {
+   "overall": {
+    "notes": 1319,
+    "support": 619,
+    "tp": 599,
+    "fp": 4,
+    "fn": 20,
+    "precision": 0.9933665008291874,
+    "recall": 0.9676898222940227,
+    "f1": 0.9803600654664485
+   },
+   "by_barrier": {
+    "placement": {
+     "notes": 1319,
+     "support": 112,
+     "tp": 107,
+     "fp": 0,
+     "fn": 5,
+     "precision": 1.0,
+     "recall": 0.9553571428571429,
+     "f1": 0.9771689497716894
+    },
+    "home_care": {
+     "notes": 1319,
+     "support": 130,
+     "tp": 126,
+     "fp": 0,
+     "fn": 4,
+     "precision": 1.0,
+     "recall": 0.9692307692307692,
+     "f1": 0.984375
+    },
+    "insurance_auth": {
+     "notes": 1319,
+     "support": 104,
+     "tp": 101,
+     "fp": 0,
+     "fn": 3,
+     "precision": 1.0,
+     "recall": 0.9711538461538461,
+     "f1": 0.9853658536585366
+    },
+    "family_pickup": {
+     "notes": 1319,
+     "support": 72,
+     "tp": 70,
+     "fp": 0,
+     "fn": 2,
+     "precision": 1.0,
+     "recall": 0.9722222222222222,
+     "f1": 0.9859154929577465
+    },
+    "transport": {
+     "notes": 1319,
+     "support": 109,
+     "tp": 106,
+     "fp": 1,
+     "fn": 3,
+     "precision": 0.9906542056074766,
+     "recall": 0.9724770642201835,
+     "f1": 0.9814814814814815
+    },
+    "meds_equipment": {
+     "notes": 1319,
+     "support": 92,
+     "tp": 89,
+     "fp": 3,
+     "fn": 3,
+     "precision": 0.967391304347826,
+     "recall": 0.967391304347826,
+     "f1": 0.967391304347826
+    }
+   },
+   "by_payer": {
+    "Commercial": {
+     "notes": 327,
+     "support": 187,
+     "tp": 183,
+     "fp": 1,
+     "fn": 4,
+     "precision": 0.9945652173913043,
+     "recall": 0.9786096256684492,
+     "f1": 0.9865229110512129
+    },
+    "Medicaid/CHIP": {
+     "notes": 326,
+     "support": 186,
+     "tp": 180,
+     "fp": 1,
+     "fn": 6,
+     "precision": 0.994475138121547,
+     "recall": 0.967741935483871,
+     "f1": 0.9809264305177112
+    },
+    "Medicare": {
+     "notes": 349,
+     "support": 209,
+     "tp": 202,
+     "fp": 2,
+     "fn": 7,
+     "precision": 0.9901960784313726,
+     "recall": 0.9665071770334929,
+     "f1": 0.9782082324455206
+    },
+    "Other (VA, workers' comp, auto)": {
+     "notes": 140,
+     "support": 0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "precision": null,
+     "recall": null,
+     "f1": null
+    },
+    "Uninsured": {
+     "notes": 177,
+     "support": 37,
+     "tp": 34,
+     "fp": 0,
+     "fn": 3,
+     "precision": 1.0,
+     "recall": 0.918918918918919,
+     "f1": 0.9577464788732394
+    }
+   },
+   "sample_n": 1319,
+   "sample_labelled_barriers": 619,
+   "sample_fallback_notes": 2,
+   "sample": "B (sealed)",
+   "model": "llama3.2:3b",
+   "prompt_version": "v1-2241325901",
+   "guard_version": "g2"
+  },
+  "llm_checks_g1": {
+   "overall": {
+    "notes": 1319,
+    "support": 619,
+    "tp": 569,
+    "fp": 195,
+    "fn": 50,
+    "precision": 0.7447643979057592,
+    "recall": 0.9192245557350566,
+    "f1": 0.8228488792480115
+   },
+   "by_barrier": {
+    "placement": {
+     "notes": 1319,
+     "support": 112,
+     "tp": 105,
+     "fp": 40,
+     "fn": 7,
+     "precision": 0.7241379310344828,
+     "recall": 0.9375,
+     "f1": 0.8171206225680934
+    },
+    "home_care": {
+     "notes": 1319,
+     "support": 130,
+     "tp": 120,
+     "fp": 0,
+     "fn": 10,
+     "precision": 1.0,
+     "recall": 0.9230769230769231,
+     "f1": 0.96
+    },
+    "insurance_auth": {
+     "notes": 1319,
+     "support": 104,
+     "tp": 99,
+     "fp": 12,
+     "fn": 5,
+     "precision": 0.8918918918918919,
+     "recall": 0.9519230769230769,
+     "f1": 0.9209302325581395
+    },
+    "family_pickup": {
+     "notes": 1319,
+     "support": 72,
+     "tp": 66,
+     "fp": 14,
+     "fn": 6,
+     "precision": 0.825,
+     "recall": 0.9166666666666666,
+     "f1": 0.868421052631579
+    },
+    "transport": {
+     "notes": 1319,
+     "support": 109,
+     "tp": 101,
+     "fp": 20,
+     "fn": 8,
+     "precision": 0.8347107438016529,
+     "recall": 0.926605504587156,
+     "f1": 0.8782608695652174
+    },
+    "meds_equipment": {
+     "notes": 1319,
+     "support": 92,
+     "tp": 78,
+     "fp": 109,
+     "fn": 14,
+     "precision": 0.41711229946524064,
+     "recall": 0.8478260869565217,
+     "f1": 0.5591397849462365
+    }
+   },
+   "by_payer": {
+    "Commercial": {
+     "notes": 327,
+     "support": 187,
+     "tp": 174,
+     "fp": 45,
+     "fn": 13,
+     "precision": 0.7945205479452054,
+     "recall": 0.93048128342246,
+     "f1": 0.8571428571428571
+    },
+    "Medicaid/CHIP": {
+     "notes": 326,
+     "support": 186,
+     "tp": 169,
+     "fp": 47,
+     "fn": 17,
+     "precision": 0.7824074074074074,
+     "recall": 0.9086021505376344,
+     "f1": 0.8407960199004975
+    },
+    "Medicare": {
+     "notes": 349,
+     "support": 209,
+     "tp": 193,
+     "fp": 68,
+     "fn": 16,
+     "precision": 0.7394636015325671,
+     "recall": 0.9234449760765551,
+     "f1": 0.8212765957446808
+    },
+    "Other (VA, workers' comp, auto)": {
+     "notes": 140,
+     "support": 0,
+     "tp": 0,
+     "fp": 13,
+     "fn": 0,
+     "precision": 0.0,
+     "recall": null,
+     "f1": 0.0
+    },
+    "Uninsured": {
+     "notes": 177,
+     "support": 37,
+     "tp": 33,
+     "fp": 22,
+     "fn": 4,
+     "precision": 0.6,
+     "recall": 0.8918918918918919,
+     "f1": 0.717391304347826
+    }
+   },
+   "sample_n": 1319,
+   "sample_labelled_barriers": 619,
+   "sample_fallback_notes": 2,
+   "sample": "B (sealed)",
+   "model": "llama3.2:3b",
+   "prompt_version": "v1-2241325901",
+   "guard_version": "g2"
+  },
+  "stress": {
+   "llm": {
+    "overall": {
+     "notes": 304,
+     "support": 144,
+     "tp": 79,
+     "fp": 2,
+     "fn": 65,
+     "precision": 0.9753086419753086,
+     "recall": 0.5486111111111112,
+     "f1": 0.7022222222222222
+    },
+    "by_barrier": {
+     "placement": {
+      "notes": 304,
+      "support": 24,
+      "tp": 12,
+      "fp": 2,
+      "fn": 12,
+      "precision": 0.8571428571428571,
+      "recall": 0.5,
+      "f1": 0.631578947368421
+     },
+     "home_care": {
+      "notes": 304,
+      "support": 24,
+      "tp": 11,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.4583333333333333,
+      "f1": 0.6285714285714286
+     },
+     "insurance_auth": {
+      "notes": 304,
+      "support": 24,
+      "tp": 14,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579
+     },
+     "family_pickup": {
+      "notes": 304,
+      "support": 24,
+      "tp": 15,
+      "fp": 0,
+      "fn": 9,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+     },
+     "transport": {
+      "notes": 304,
+      "support": 24,
+      "tp": 13,
+      "fp": 0,
+      "fn": 11,
+      "precision": 1.0,
+      "recall": 0.5416666666666666,
+      "f1": 0.7027027027027027
+     },
+     "meds_equipment": {
+      "notes": 304,
+      "support": 24,
+      "tp": 14,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579
+     }
+    },
+    "by_payer": {},
+    "sample_n": 304,
+    "sample_labelled_barriers": 144,
+    "sample_fallback_notes": 2,
+    "sample": "new-phrasing stress set",
+    "model": "llama3.2:3b",
+    "prompt_version": "v1-2241325901",
+    "guard_version": "g2"
+   },
+   "rules": {
+    "overall": {
+     "notes": 304,
+     "support": 144,
+     "tp": 9,
+     "fp": 0,
+     "fn": 135,
+     "precision": 1.0,
+     "recall": 0.0625,
+     "f1": 0.11764705882352941
+    },
+    "by_barrier": {
+     "placement": {
+      "notes": 304,
+      "support": 24,
+      "tp": 6,
+      "fp": 0,
+      "fn": 18,
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1": 0.4
+     },
+     "home_care": {
+      "notes": 304,
+      "support": 24,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "insurance_auth": {
+      "notes": 304,
+      "support": 24,
+      "tp": 3,
+      "fp": 0,
+      "fn": 21,
+      "precision": 1.0,
+      "recall": 0.125,
+      "f1": 0.2222222222222222
+     },
+     "family_pickup": {
+      "notes": 304,
+      "support": 24,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "transport": {
+      "notes": 304,
+      "support": 24,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+     },
+     "meds_equipment": {
+      "notes": 304,
+      "support": 24,
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0
+     }
+    },
+    "by_payer": {},
+    "sample_n": 304,
+    "sample_labelled_barriers": 144,
+    "sample_fallback_notes": 2,
+    "sample": "new-phrasing stress set",
+    "model": "llama3.2:3b",
+    "prompt_version": "v1-2241325901",
+    "guard_version": "g2"
+   },
+   "combined": {
+    "overall": {
+     "notes": 304,
+     "support": 144,
+     "tp": 79,
+     "fp": 2,
+     "fn": 65,
+     "precision": 0.9753086419753086,
+     "recall": 0.5486111111111112,
+     "f1": 0.7022222222222222
+    },
+    "by_barrier": {
+     "placement": {
+      "notes": 304,
+      "support": 24,
+      "tp": 12,
+      "fp": 2,
+      "fn": 12,
+      "precision": 0.8571428571428571,
+      "recall": 0.5,
+      "f1": 0.631578947368421
+     },
+     "home_care": {
+      "notes": 304,
+      "support": 24,
+      "tp": 11,
+      "fp": 0,
+      "fn": 13,
+      "precision": 1.0,
+      "recall": 0.4583333333333333,
+      "f1": 0.6285714285714286
+     },
+     "insurance_auth": {
+      "notes": 304,
+      "support": 24,
+      "tp": 14,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579
+     },
+     "family_pickup": {
+      "notes": 304,
+      "support": 24,
+      "tp": 15,
+      "fp": 0,
+      "fn": 9,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+     },
+     "transport": {
+      "notes": 304,
+      "support": 24,
+      "tp": 13,
+      "fp": 0,
+      "fn": 11,
+      "precision": 1.0,
+      "recall": 0.5416666666666666,
+      "f1": 0.7027027027027027
+     },
+     "meds_equipment": {
+      "notes": 304,
+      "support": 24,
+      "tp": 14,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579
+     }
+    },
+    "by_payer": {},
+    "sample_n": 304,
+    "sample_labelled_barriers": 144,
+    "sample_fallback_notes": 2,
+    "sample": "new-phrasing stress set",
+    "model": "llama3.2:3b",
+    "prompt_version": "v1-2241325901",
+    "guard_version": "g2"
+   },
+   "llm_checks_g1": {
+    "overall": {
+     "notes": 304,
+     "support": 144,
+     "tp": 112,
+     "fp": 41,
+     "fn": 32,
+     "precision": 0.7320261437908496,
+     "recall": 0.7777777777777778,
+     "f1": 0.7542087542087542
+    },
+    "by_barrier": {
+     "placement": {
+      "notes": 304,
+      "support": 24,
+      "tp": 23,
+      "fp": 13,
+      "fn": 1,
+      "precision": 0.6388888888888888,
+      "recall": 0.9583333333333334,
+      "f1": 0.7666666666666667
+     },
+     "home_care": {
+      "notes": 304,
+      "support": 24,
+      "tp": 14,
+      "fp": 0,
+      "fn": 10,
+      "precision": 1.0,
+      "recall": 0.5833333333333334,
+      "f1": 0.7368421052631579
+     },
+     "insurance_auth": {
+      "notes": 304,
+      "support": 24,
+      "tp": 15,
+      "fp": 2,
+      "fn": 9,
+      "precision": 0.8823529411764706,
+      "recall": 0.625,
+      "f1": 0.7317073170731707
+     },
+     "family_pickup": {
+      "notes": 304,
+      "support": 24,
+      "tp": 24,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.9230769230769231,
+      "recall": 1.0,
+      "f1": 0.96
+     },
+     "transport": {
+      "notes": 304,
+      "support": 24,
+      "tp": 15,
+      "fp": 0,
+      "fn": 9,
+      "precision": 1.0,
+      "recall": 0.625,
+      "f1": 0.7692307692307693
+     },
+     "meds_equipment": {
+      "notes": 304,
+      "support": 24,
+      "tp": 21,
+      "fp": 24,
+      "fn": 3,
+      "precision": 0.4666666666666667,
+      "recall": 0.875,
+      "f1": 0.6086956521739131
+     }
+    },
+    "by_payer": {},
+    "sample_n": 304,
+    "sample_labelled_barriers": 144,
+    "sample_fallback_notes": 2,
+    "sample": "new-phrasing stress set",
+    "model": "llama3.2:3b",
+    "prompt_version": "v1-2241325901",
+    "guard_version": "g2"
+   }
+  },
+  "llm_run": {
+   "model": "llama3.2:3b",
+   "display_name": "Llama 3.2 3B, running locally",
+   "prompt_version": "v1-2241325901",
+   "guard_version": "g2",
+   "stress_notes": 304,
+   "why_this_model": "This Mac has 8 GB of RAM. The team plan uses llama3.2:3b-instruct below 16 GB (llama3.1:8b and qwen2.5:7b would be compared only with 16 GB or more).",
+   "temperature": 0.0,
+   "seed": 20261124,
+   "notes_read": 2180,
+   "unique_texts_read": 2037,
+   "demo_notes": 581,
+   "evaluation_notes": 1321,
+   "fallback_notes": 2,
+   "wall_minutes": 39.3,
+   "sizing": {
+    "measured_notes": 40,
+    "measured_s_per_note": 0.574,
+    "budget_min": 60,
+    "sample_scale": 1.0,
+    "estimated_min": 20.0
+   },
+   "guard_counts": {
+    "model_items": 1737,
+    "kept": 730,
+    "not_active": 577,
+    "no_open_task_named": 269,
+    "negated_or_resolved": 46,
+    "evidence_not_in_note": 65,
+    "relabelled": 64,
+    "fallback": 4
+   },
+   "finished_at": "2026-11-23T07:54:43+00:00"
+  },
+  "history": [
+   {
+    "reader": "v1-2241325901+g1",
+    "sample": "A",
+    "sample_n": 1561,
+    "wall_minutes": 35.4,
+    "llm": {
+     "overall": {
+      "notes": 1561,
+      "support": 864,
+      "tp": 785,
+      "fp": 217,
+      "fn": 79,
+      "precision": 0.783433133732535,
+      "recall": 0.9085648148148148,
+      "f1": 0.8413719185423365
+     },
+     "by_barrier": {
+      "placement": {
+       "notes": 1561,
+       "support": 161,
+       "tp": 149,
+       "fp": 60,
+       "fn": 12,
+       "precision": 0.7129186602870813,
+       "recall": 0.9254658385093167,
+       "f1": 0.8054054054054054
+      },
+      "home_care": {
+       "notes": 1561,
+       "support": 157,
+       "tp": 139,
+       "fp": 0,
+       "fn": 18,
+       "precision": 1.0,
+       "recall": 0.8853503184713376,
+       "f1": 0.9391891891891891
+      },
+      "insurance_auth": {
+       "notes": 1561,
+       "support": 148,
+       "tp": 131,
+       "fp": 20,
+       "fn": 17,
+       "precision": 0.8675496688741722,
+       "recall": 0.8851351351351351,
+       "f1": 0.8762541806020067
+      },
+      "family_pickup": {
+       "notes": 1561,
+       "support": 138,
+       "tp": 129,
+       "fp": 16,
+       "fn": 9,
+       "precision": 0.8896551724137931,
+       "recall": 0.9347826086956522,
+       "f1": 0.911660777385159
+      },
+      "transport": {
+       "notes": 1561,
+       "support": 147,
+       "tp": 134,
+       "fp": 19,
+       "fn": 13,
+       "precision": 0.8758169934640523,
+       "recall": 0.9115646258503401,
+       "f1": 0.8933333333333333
+      },
+      "meds_equipment": {
+       "notes": 1561,
+       "support": 113,
+       "tp": 103,
+       "fp": 102,
+       "fn": 10,
+       "precision": 0.5024390243902439,
+       "recall": 0.911504424778761,
+       "f1": 0.6477987421383647
+      }
+     },
+     "by_payer": {
+      "Commercial": {
+       "notes": 349,
+       "support": 210,
+       "tp": 193,
+       "fp": 41,
+       "fn": 17,
+       "precision": 0.8247863247863247,
+       "recall": 0.919047619047619,
+       "f1": 0.8693693693693694
+      },
+      "Medicaid/CHIP": {
+       "notes": 350,
+       "support": 210,
+       "tp": 192,
+       "fp": 33,
+       "fn": 18,
+       "precision": 0.8533333333333334,
+       "recall": 0.9142857142857143,
+       "f1": 0.8827586206896552
+      },
+      "Medicare": {
+       "notes": 350,
+       "support": 210,
+       "tp": 191,
+       "fp": 57,
+       "fn": 19,
+       "precision": 0.7701612903225806,
+       "recall": 0.9095238095238095,
+       "f1": 0.834061135371179
+      },
+      "Other (VA, workers' comp, auto)": {
+       "notes": 234,
+       "support": 95,
+       "tp": 87,
+       "fp": 39,
+       "fn": 8,
+       "precision": 0.6904761904761905,
+       "recall": 0.9157894736842105,
+       "f1": 0.7873303167420814
+      },
+      "Uninsured": {
+       "notes": 278,
+       "support": 139,
+       "tp": 122,
+       "fp": 47,
+       "fn": 17,
+       "precision": 0.7218934911242604,
+       "recall": 0.8776978417266187,
+       "f1": 0.7922077922077922
+      }
+     }
+    },
+    "rules": {
+     "overall": {
+      "notes": 1561,
+      "support": 864,
+      "tp": 803,
+      "fp": 0,
+      "fn": 61,
+      "precision": 1.0,
+      "recall": 0.9293981481481481,
+      "f1": 0.9634073185362927
+     },
+     "by_barrier": {
+      "placement": {
+       "notes": 1561,
+       "support": 161,
+       "tp": 148,
+       "fp": 0,
+       "fn": 13,
+       "precision": 1.0,
+       "recall": 0.9192546583850931,
+       "f1": 0.9579288025889967
+      },
+      "home_care": {
+       "notes": 1561,
+       "support": 157,
+       "tp": 141,
+       "fp": 0,
+       "fn": 16,
+       "precision": 1.0,
+       "recall": 0.8980891719745223,
+       "f1": 0.9463087248322147
+      },
+      "insurance_auth": {
+       "notes": 1561,
+       "support": 148,
+       "tp": 137,
+       "fp": 0,
+       "fn": 11,
+       "precision": 1.0,
+       "recall": 0.9256756756756757,
+       "f1": 0.9614035087719298
+      },
+      "family_pickup": {
+       "notes": 1561,
+       "support": 138,
+       "tp": 133,
+       "fp": 0,
+       "fn": 5,
+       "precision": 1.0,
+       "recall": 0.9637681159420289,
+       "f1": 0.981549815498155
+      },
+      "transport": {
+       "notes": 1561,
+       "support": 147,
+       "tp": 138,
+       "fp": 0,
+       "fn": 9,
+       "precision": 1.0,
+       "recall": 0.9387755102040817,
+       "f1": 0.968421052631579
+      },
+      "meds_equipment": {
+       "notes": 1561,
+       "support": 113,
+       "tp": 106,
+       "fp": 0,
+       "fn": 7,
+       "precision": 1.0,
+       "recall": 0.9380530973451328,
+       "f1": 0.9680365296803652
+      }
+     },
+     "by_payer": {
+      "Commercial": {
+       "notes": 349,
+       "support": 210,
+       "tp": 196,
+       "fp": 0,
+       "fn": 14,
+       "precision": 1.0,
+       "recall": 0.9333333333333333,
+       "f1": 0.9655172413793104
+      },
+      "Medicaid/CHIP": {
+       "notes": 350,
+       "support": 210,
+       "tp": 194,
+       "fp": 0,
+       "fn": 16,
+       "precision": 1.0,
+       "recall": 0.9238095238095239,
+       "f1": 0.9603960396039604
+      },
+      "Medicare": {
+       "notes": 350,
+       "support": 210,
+       "tp": 195,
+       "fp": 0,
+       "fn": 15,
+       "precision": 1.0,
+       "recall": 0.9285714285714286,
+       "f1": 0.9629629629629629
+      },
+      "Other (VA, workers' comp, auto)": {
+       "notes": 234,
+       "support": 95,
+       "tp": 92,
+       "fp": 0,
+       "fn": 3,
+       "precision": 1.0,
+       "recall": 0.968421052631579,
+       "f1": 0.983957219251337
+      },
+      "Uninsured": {
+       "notes": 278,
+       "support": 139,
+       "tp": 126,
+       "fp": 0,
+       "fn": 13,
+       "precision": 1.0,
+       "recall": 0.9064748201438849,
+       "f1": 0.9509433962264151
+      }
+     }
+    },
+    "combined": {
+     "overall": {
+      "notes": 1561,
+      "support": 864,
+      "tp": 821,
+      "fp": 217,
+      "fn": 43,
+      "precision": 0.7909441233140655,
+      "recall": 0.9502314814814815,
+      "f1": 0.8633017875920084
+     },
+     "by_barrier": {
+      "placement": {
+       "notes": 1561,
+       "support": 161,
+       "tp": 151,
+       "fp": 60,
+       "fn": 10,
+       "precision": 0.7156398104265402,
+       "recall": 0.937888198757764,
+       "f1": 0.8118279569892473
+      },
+      "home_care": {
+       "notes": 1561,
+       "support": 157,
+       "tp": 146,
+       "fp": 0,
+       "fn": 11,
+       "precision": 1.0,
+       "recall": 0.9299363057324841,
+       "f1": 0.9636963696369637
+      },
+      "insurance_auth": {
+       "notes": 1561,
+       "support": 148,
+       "tp": 141,
+       "fp": 20,
+       "fn": 7,
+       "precision": 0.8757763975155279,
+       "recall": 0.9527027027027027,
+       "f1": 0.912621359223301
+      },
+      "family_pickup": {
+       "notes": 1561,
+       "support": 138,
+       "tp": 133,
+       "fp": 16,
+       "fn": 5,
+       "precision": 0.8926174496644296,
+       "recall": 0.9637681159420289,
+       "f1": 0.926829268292683
+      },
+      "transport": {
+       "notes": 1561,
+       "support": 147,
+       "tp": 140,
+       "fp": 19,
+       "fn": 7,
+       "precision": 0.8805031446540881,
+       "recall": 0.9523809523809523,
+       "f1": 0.9150326797385621
+      },
+      "meds_equipment": {
+       "notes": 1561,
+       "support": 113,
+       "tp": 110,
+       "fp": 102,
+       "fn": 3,
+       "precision": 0.5188679245283019,
+       "recall": 0.9734513274336283,
+       "f1": 0.676923076923077
+      }
+     },
+     "by_payer": {
+      "Commercial": {
+       "notes": 349,
+       "support": 210,
+       "tp": 200,
+       "fp": 41,
+       "fn": 10,
+       "precision": 0.8298755186721992,
+       "recall": 0.9523809523809523,
+       "f1": 0.8869179600886918
+      },
+      "Medicaid/CHIP": {
+       "notes": 350,
+       "support": 210,
+       "tp": 197,
+       "fp": 33,
+       "fn": 13,
+       "precision": 0.8565217391304348,
+       "recall": 0.9380952380952381,
+       "f1": 0.8954545454545455
+      },
+      "Medicare": {
+       "notes": 350,
+       "support": 210,
+       "tp": 200,
+       "fp": 57,
+       "fn": 10,
+       "precision": 0.7782101167315175,
+       "recall": 0.9523809523809523,
+       "f1": 0.8565310492505354
+      },
+      "Other (VA, workers' comp, auto)": {
+       "notes": 234,
+       "support": 95,
+       "tp": 93,
+       "fp": 39,
+       "fn": 2,
+       "precision": 0.7045454545454546,
+       "recall": 0.9789473684210527,
+       "f1": 0.8193832599118943
+      },
+      "Uninsured": {
+       "notes": 278,
+       "support": 139,
+       "tp": 131,
+       "fp": 47,
+       "fn": 8,
+       "precision": 0.7359550561797753,
+       "recall": 0.9424460431654677,
+       "f1": 0.8264984227129337
+      }
+     }
+    }
+   }
+  ]
+ },
+ "admission": {
+  "prediction_time": "end of triage",
+  "features": [
+   "age",
+   "heart_rate",
+   "systolic_bp",
+   "resp_rate",
+   "spo2",
+   "temp_c",
+   "recent_ed_visits_12m",
+   "chief_complaint",
+   "esi",
+   "arrival_mode",
+   "arrival_period",
+   "weekend",
+   "winter"
+  ],
+  "chosen": "logistic",
+  "selection_margin_auc": 0.02,
+  "selection": {
+   "logistic": {
+    "n": 6510,
+    "positives": 1128,
+    "negatives": 5382,
+    "prevalence": 0.17327188940092167,
+    "auc": 0.846750133752909,
+    "average_precision": 0.5620501020299128,
+    "brier": 0.10487970578880977,
+    "mean_predicted": 0.16921415679378568,
+    "calibration_gap_pts": -0.40577326071359887
+   },
+   "boosting": {
+    "n": 6510,
+    "positives": 1128,
+    "negatives": 5382,
+    "prevalence": 0.17327188940092167,
+    "auc": 0.8447676422063564,
+    "average_precision": 0.556286827279575,
+    "brier": 0.10545888226545506,
+    "mean_predicted": 0.16976645305292595,
+    "calibration_gap_pts": -0.3505436347995716
+   }
+  },
+  "test": {
+   "logistic": {
+    "n": 20686,
+    "positives": 3492,
+    "negatives": 17194,
+    "prevalence": 0.16880982306874215,
+    "auc": 0.8567195781154376,
+    "average_precision": 0.5566587728387629,
+    "brier": 0.10183192544127143,
+    "mean_predicted": 0.17070713623338302,
+    "calibration_gap_pts": 0.1897313164640868
+   },
+   "boosting": {
+    "n": 20686,
+    "positives": 3492,
+    "negatives": 17194,
+    "prevalence": 0.16880982306874215,
+    "auc": 0.8564291703957572,
+    "average_precision": 0.5530155161164392,
+    "brier": 0.10215086165549775,
+    "mean_predicted": 0.17059689085151145,
+    "calibration_gap_pts": 0.1787067782769297
+   }
+  },
+  "train_rows": 60916,
+  "test_rows": 20686,
+  "outcome_coverage_test": 0.934495843874232,
+  "calibration_bins": [
+   {
+    "bin_low": 0.0,
+    "bin_high": 0.1,
+    "mean_predicted": 0.03410906151137526,
+    "observed": 0.03073330219523587,
+    "count": 10705
+   },
+   {
+    "bin_low": 0.1,
+    "bin_high": 0.2,
+    "mean_predicted": 0.1421992644547504,
+    "observed": 0.13655244029075805,
+    "count": 3852
+   },
+   {
+    "bin_low": 0.2,
+    "bin_high": 0.30000000000000004,
+    "mean_predicted": 0.25086518560991083,
+    "observed": 0.25503742084052966,
+    "count": 1737
+   },
+   {
+    "bin_low": 0.30000000000000004,
+    "bin_high": 0.4,
+    "mean_predicted": 0.3465008429955083,
+    "observed": 0.36488250652741516,
+    "count": 1532
+   },
+   {
+    "bin_low": 0.4,
+    "bin_high": 0.5,
+    "mean_predicted": 0.44670232235055024,
+    "observed": 0.46424974823766363,
+    "count": 993
+   },
+   {
+    "bin_low": 0.5,
+    "bin_high": 0.6000000000000001,
+    "mean_predicted": 0.548926137506188,
+    "observed": 0.5303265940902022,
+    "count": 643
+   },
+   {
+    "bin_low": 0.6000000000000001,
+    "bin_high": 0.7000000000000001,
+    "mean_predicted": 0.6468040244059298,
+    "observed": 0.62,
+    "count": 750
+   },
+   {
+    "bin_low": 0.7000000000000001,
+    "bin_high": 0.8,
+    "mean_predicted": 0.7370018957075237,
+    "observed": 0.729903536977492,
+    "count": 311
+   },
+   {
+    "bin_low": 0.8,
+    "bin_high": 0.9,
+    "mean_predicted": 0.8515794351556946,
+    "observed": 0.8409090909090909,
+    "count": 132
+   },
+   {
+    "bin_low": 0.9,
+    "bin_high": 1.0,
+    "mean_predicted": 0.9197621055046047,
+    "observed": 0.967741935483871,
+    "count": 31
+   }
+  ],
+  "roc": [
+   {
+    "fpr": 0.0,
+    "tpr": 0.0
+   },
+   {
+    "fpr": 0.002617192043736187,
+    "tpr": 0.060423825887743414
+   },
+   {
+    "fpr": 0.005699662673025474,
+    "tpr": 0.1013745704467354
+   },
+   {
+    "fpr": 0.00948005118064441,
+    "tpr": 0.13631156930126
+   },
+   {
+    "fpr": 0.012329882517157147,
+    "tpr": 0.16008018327605955
+   },
+   {
+    "fpr": 0.015470512969640571,
+    "tpr": 0.17926689576174112
+   },
+   {
+    "fpr": 0.018611143422123996,
+    "tpr": 0.20704467353951891
+   },
+   {
+    "fpr": 0.022333372106548795,
+    "tpr": 0.23711340206185566
+   },
+   {
+    "fpr": 0.02564848202861463,
+    "tpr": 0.25830469644902637
+   },
+   {
+    "fpr": 0.029603350005815984,
+    "tpr": 0.2789232531500573
+   },
+   {
+    "fpr": 0.033441898336629056,
+    "tpr": 0.30097365406643756
+   },
+   {
+    "fpr": 0.037396766313830404,
+    "tpr": 0.3241695303550974
+   },
+   {
+    "fpr": 0.041642433407002445,
+    "tpr": 0.34507445589919816
+   },
+   {
+    "fpr": 0.045132022798650695,
+    "tpr": 0.36884306987399773
+   },
+   {
+    "fpr": 0.04891241130626963,
+    "tpr": 0.3857388316151203
+   },
+   {
+    "fpr": 0.05339071769221822,
+    "tpr": 0.40177548682703323
+   },
+   {
+    "fpr": 0.05868326160288473,
+    "tpr": 0.4252577319587629
+   },
+   {
+    "fpr": 0.06362684657438641,
+    "tpr": 0.44186712485681556
+   },
+   {
+    "fpr": 0.0683959520763057,
+    "tpr": 0.4619129438717068
+   },
+   {
+    "fpr": 0.07363033616377807,
+    "tpr": 0.4790950744558992
+   },
+   {
+    "fpr": 0.07869024078166803,
+    "tpr": 0.4948453608247423
+   },
+   {
+    "fpr": 0.08421542398511109,
+    "tpr": 0.5120274914089347
+   },
+   {
+    "fpr": 0.0895079678957776,
+    "tpr": 0.5263459335624284
+   },
+   {
+    "fpr": 0.09392811445853205,
+    "tpr": 0.5415234822451317
+   },
+   {
+    "fpr": 0.098988019076422,
+    "tpr": 0.5564146620847652
+   },
+   {
+    "fpr": 0.10509480051180645,
+    "tpr": 0.5698739977090492
+   },
+   {
+    "fpr": 0.11108526230080261,
+    "tpr": 0.5870561282932417
+   },
+   {
+    "fpr": 0.11661044550424567,
+    "tpr": 0.6013745704467354
+   },
+   {
+    "fpr": 0.12167035012213563,
+    "tpr": 0.6168384879725086
+   },
+   {
+    "fpr": 0.12958008607653831,
+    "tpr": 0.6302978235967927
+   },
+   {
+    "fpr": 0.1352797487495638,
+    "tpr": 0.645475372279496
+   },
+   {
+    "fpr": 0.140863091776201,
+    "tpr": 0.6580756013745704
+   },
+   {
+    "fpr": 0.1480167500290799,
+    "tpr": 0.6715349369988545
+   },
+   {
+    "fpr": 0.15522856810515295,
+    "tpr": 0.6838487972508591
+   },
+   {
+    "fpr": 0.1610445504245667,
+    "tpr": 0.6967353951890034
+   },
+   {
+    "fpr": 0.16837268814702802,
+    "tpr": 0.7096219931271478
+   },
+   {
+    "fpr": 0.17907409561474932,
+    "tpr": 0.7230813287514318
+   },
+   {
+    "fpr": 0.18960102361288822,
+    "tpr": 0.7376861397479955
+   },
+   {
+    "fpr": 0.2005932301965802,
+    "tpr": 0.7520045819014891
+   },
+   {
+    "fpr": 0.21106199837152495,
+    "tpr": 0.7643184421534936
+   },
+   {
+    "fpr": 0.2208910084913342,
+    "tpr": 0.7774914089347079
+   },
+   {
+    "fpr": 0.23287193206932652,
+    "tpr": 0.790950744558992
+   },
+   {
+    "fpr": 0.2432825404210771,
+    "tpr": 0.8035509736540665
+   },
+   {
+    "fpr": 0.2536931487728277,
+    "tpr": 0.8144329896907216
+   },
+   {
+    "fpr": 0.2689891822728859,
+    "tpr": 0.8247422680412371
+   },
+   {
+    "fpr": 0.28539025241363264,
+    "tpr": 0.8347651775486827
+   },
+   {
+    "fpr": 0.3036524368965918,
+    "tpr": 0.8479381443298969
+   },
+   {
+    "fpr": 0.32040246597650346,
+    "tpr": 0.8591065292096219
+   },
+   {
+    "fpr": 0.3329649877864371,
+    "tpr": 0.8694158075601375
+   },
+   {
+    "fpr": 0.3511690124462022,
+    "tpr": 0.8808705612829324
+   },
+   {
+    "fpr": 0.3647202512504362,
+    "tpr": 0.8914662084765178
+   },
+   {
+    "fpr": 0.386646504594626,
+    "tpr": 0.9017754868270332
+   },
+   {
+    "fpr": 0.4121205071536583,
+    "tpr": 0.9123711340206185
+   },
+   {
+    "fpr": 0.4342212399674305,
+    "tpr": 0.9232531500572738
+   },
+   {
+    "fpr": 0.46266139350936375,
+    "tpr": 0.934135166093929
+   },
+   {
+    "fpr": 0.49110154705129694,
+    "tpr": 0.945303550973654
+   },
+   {
+    "fpr": 0.5275095963708271,
+    "tpr": 0.9564719358533792
+   },
+   {
+    "fpr": 0.5682796324299174,
+    "tpr": 0.9667812142038946
+   },
+   {
+    "fpr": 0.624810980574619,
+    "tpr": 0.9765177548682703
+   },
+   {
+    "fpr": 0.6984994765615913,
+    "tpr": 0.9862542955326461
+   },
+   {
+    "fpr": 0.8248226125392579,
+    "tpr": 0.9962772050400917
+   },
+   {
+    "fpr": 1.0,
+    "tpr": 1.0
+   }
+  ],
+  "pr": [
+   {
+    "recall": 1.0,
+    "precision": 0.16880982306874215
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.17166453642709664
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.17461746174617462
+   },
+   {
+    "recall": 0.9997136311569301,
+    "precision": 0.17762287575048336
+   },
+   {
+    "recall": 0.9994272623138603,
+    "precision": 0.18073537027446918
+   },
+   {
+    "recall": 0.9994272623138603,
+    "precision": 0.18401349783823684
+   },
+   {
+    "recall": 0.9985681557846506,
+    "precision": 0.18725163784770701
+   },
+   {
+    "recall": 0.9979954180985109,
+    "precision": 0.1906663748769012
+   },
+   {
+    "recall": 0.9974226804123711,
+    "precision": 0.19421211107393777
+   },
+   {
+    "recall": 0.9959908361970218,
+    "precision": 0.19772598067083572
+   },
+   {
+    "recall": 0.9948453608247423,
+    "precision": 0.20143801461208397
+   },
+   {
+    "recall": 0.9936998854524628,
+    "precision": 0.20530114779316058
+   },
+   {
+    "recall": 0.9911225658648339,
+    "precision": 0.20902282884406329
+   },
+   {
+    "recall": 0.9902634593356243,
+    "precision": 0.21327248057234488
+   },
+   {
+    "recall": 0.988831615120275,
+    "precision": 0.21758034026465028
+   },
+   {
+    "recall": 0.9871134020618557,
+    "precision": 0.22201468504444158
+   },
+   {
+    "recall": 0.9848224513172967,
+    "precision": 0.22651824529047557
+   },
+   {
+    "recall": 0.9810996563573883,
+    "precision": 0.23089365143550344
+   },
+   {
+    "recall": 0.9782359679266895,
+    "precision": 0.23568373119911687
+   },
+   {
+    "recall": 0.9762313860252004,
+    "precision": 0.24091872791519434
+   },
+   {
+    "recall": 0.9733676975945017,
+    "precision": 0.2461973055193394
+   },
+   {
+    "recall": 0.9702176403207331,
+    "precision": 0.25167137126727085
+   },
+   {
+    "recall": 0.965922107674685,
+    "precision": 0.2571276109162982
+   },
+   {
+    "recall": 0.961340206185567,
+    "precision": 0.2627994363550963
+   },
+   {
+    "recall": 0.9567583046964491,
+    "precision": 0.2687851971037812
+   },
+   {
+    "recall": 0.9484536082474226,
+    "precision": 0.2740360747972861
+   },
+   {
+    "recall": 0.9450171821305842,
+    "precision": 0.28104241185487994
+   },
+   {
+    "recall": 0.9381443298969072,
+    "precision": 0.2874188454114757
+   },
+   {
+    "recall": 0.9298396334478809,
+    "precision": 0.2937398226886195
+   },
+   {
+    "recall": 0.9238258877434136,
+    "precision": 0.30121381886087767
+   },
+   {
+    "recall": 0.915807560137457,
+    "precision": 0.3085085857611422
+   },
+   {
+    "recall": 0.9063573883161512,
+    "precision": 0.3158052284973059
+   },
+   {
+    "recall": 0.8971935853379153,
+    "precision": 0.3237239098987394
+   },
+   {
+    "recall": 0.8888888888888888,
+    "precision": 0.33254767516605954
+   },
+   {
+    "recall": 0.8751431844215349,
+    "precision": 0.3399332591768632
+   },
+   {
+    "recall": 0.86368843069874,
+    "precision": 0.34883182974786026
+   },
+   {
+    "recall": 0.8513745704467354,
+    "precision": 0.3581064803661768
+   },
+   {
+    "recall": 0.8404925544100802,
+    "precision": 0.36881125911032925
+   },
+   {
+    "recall": 0.827033218785796,
+    "precision": 0.37930128710270555
+   },
+   {
+    "recall": 0.8167239404352806,
+    "precision": 0.3922971114167813
+   },
+   {
+    "recall": 0.7998281786941581,
+    "precision": 0.4032630667051689
+   },
+   {
+    "recall": 0.7803550973654066,
+    "precision": 0.4140079003342449
+   },
+   {
+    "recall": 0.761168384879725,
+    "precision": 0.42609810836806666
+   },
+   {
+    "recall": 0.7394043528064147,
+    "precision": 0.43807261621988464
+   },
+   {
+    "recall": 0.720504009163803,
+    "precision": 0.4533333333333333
+   },
+   {
+    "recall": 0.697594501718213,
+    "precision": 0.4679216288897426
+   },
+   {
+    "recall": 0.6689576174112256,
+    "precision": 0.4804607157548334
+   },
+   {
+    "recall": 0.638602520045819,
+    "precision": 0.49358123063302345
+   },
+   {
+    "recall": 0.6096792668957618,
+    "precision": 0.5100622903689507
+   },
+   {
+    "recall": 0.572737686139748,
+    "precision": 0.5221932114882507
+   },
+   {
+    "recall": 0.5398052691867125,
+    "precision": 0.5407343660355709
+   },
+   {
+    "recall": 0.5014318442153494,
+    "precision": 0.557288351368555
+   },
+   {
+    "recall": 0.46248568155784653,
+    "precision": 0.5771979985704074
+   },
+   {
+    "recall": 0.4186712485681558,
+    "precision": 0.5957620211898941
+   },
+   {
+    "recall": 0.3754295532646048,
+    "precision": 0.6213270142180095
+   },
+   {
+    "recall": 0.322737686139748,
+    "precision": 0.6381653454133636
+   },
+   {
+    "recall": 0.2694730813287514,
+    "precision": 0.6617440225035162
+   },
+   {
+    "recall": 0.21191294387170675,
+    "precision": 0.686456400742115
+   },
+   {
+    "recall": 0.15349369988545247,
+    "precision": 0.7302452316076294
+   },
+   {
+    "recall": 0.08791523482245132,
+    "precision": 0.7871794871794872
+   },
+   {
+    "recall": 0.01288659793814433,
+    "precision": 0.9782608695652174
+   },
+   {
+    "recall": 0.0,
+    "precision": 1.0
+   }
+  ],
+  "fixed_threshold": {
+   "n": 20686,
+   "positives": 3492,
+   "negatives": 17194,
+   "prevalence": 0.16880982306874215,
+   "auc": 0.8567195781154376,
+   "average_precision": 0.5566587728387629,
+   "brier": 0.10183192544127143,
+   "mean_predicted": 0.17070713623338302,
+   "calibration_gap_pts": 0.1897313164640868,
+   "tp": 368,
+   "fp": 106,
+   "fn": 3124,
+   "tn": 17088,
+   "flags": 474,
+   "flag_rate": 0.022914048148506234,
+   "precision": 0.7763713080168776,
+   "recall": 0.10538373424971363,
+   "fnr": 0.8946162657502864,
+   "fpr": 0.006164941258578574
+  },
+  "deployed_policy": {
+   "n": 20686,
+   "positives": 3492,
+   "negatives": 17194,
+   "prevalence": 0.16880982306874215,
+   "auc": 0.8567195781154376,
+   "average_precision": 0.5566587728387629,
+   "brier": 0.10183192544127143,
+   "mean_predicted": 0.17070713623338302,
+   "calibration_gap_pts": 0.1897313164640868,
+   "tp": 730,
+   "fp": 345,
+   "fn": 2762,
+   "tn": 16849,
+   "flags": 1075,
+   "flag_rate": 0.05196751426085275,
+   "precision": 0.6790697674418604,
+   "recall": 0.20904925544100803,
+   "fnr": 0.790950744558992,
+   "fpr": 0.020065139001977435
+  },
+  "typical_crowding": 1.0833333333333333,
+  "lead_time": {
+   "definition": "Hours from the first hourly batch that flagged the patient (at least the staff response delay after triage) to the admit decision, true positives only.",
+   "admitted_test": 3492,
+   "flagged_before_decision": 730,
+   "median_h": 1.9185926526833403,
+   "p25_h": 1.1312049877339936,
+   "p75_h": 3.17149803756159,
+   "missed": 2762,
+   "alerts_per_day": 11.695652173913043
+  },
+  "importance": {
+   "logistic": [
+    {
+     "feature": "esi",
+     "mean_abs_contribution": 0.9920545850250467,
+     "permutation_auc_drop": 0.16962369362922405,
+     "label": "Triage level (ESI)"
+    },
+    {
+     "feature": "age",
+     "mean_abs_contribution": 0.4434907507387729,
+     "permutation_auc_drop": 0.044319022921792316,
+     "label": "Age"
+    },
+    {
+     "feature": "chief_complaint",
+     "mean_abs_contribution": 0.47645593482888154,
+     "permutation_auc_drop": 0.033988174504825976,
+     "label": "Main complaint"
+    },
+    {
+     "feature": "spo2",
+     "mean_abs_contribution": 0.08360814763695781,
+     "permutation_auc_drop": 0.0015059465817441515,
+     "label": "Oxygen level"
+    },
+    {
+     "feature": "resp_rate",
+     "mean_abs_contribution": 0.08097820260759915,
+     "permutation_auc_drop": 0.001276292340704403,
+     "label": "Breathing rate"
+    },
+    {
+     "feature": "recent_ed_visits_12m",
+     "mean_abs_contribution": 0.03932340460418568,
+     "permutation_auc_drop": 0.00039301182262115503,
+     "label": "ED visits in past year"
+    },
+    {
+     "feature": "heart_rate",
+     "mean_abs_contribution": 0.06895818879817407,
+     "permutation_auc_drop": 0.0002890926253816077,
+     "label": "Heart rate"
+    },
+    {
+     "feature": "arrival_mode",
+     "mean_abs_contribution": 0.02643959870385764,
+     "permutation_auc_drop": 0.00020300494344456985,
+     "label": "Arrival mode"
+    },
+    {
+     "feature": "winter",
+     "mean_abs_contribution": 0.005129118971285231,
+     "permutation_auc_drop": 3.696936872247628e-05,
+     "label": "Winter season"
+    },
+    {
+     "feature": "weekend",
+     "mean_abs_contribution": 0.0007621519790196431,
+     "permutation_auc_drop": -6.401056775369914e-06,
+     "label": "Weekend"
+    },
+    {
+     "feature": "temp_c",
+     "mean_abs_contribution": 0.010094227815753806,
+     "permutation_auc_drop": -7.1783279551485e-05,
+     "label": "Temperature"
+    },
+    {
+     "feature": "systolic_bp",
+     "mean_abs_contribution": 0.011776667227465313,
+     "permutation_auc_drop": -0.00013827588972733137,
+     "label": "Blood pressure"
+    },
+    {
+     "feature": "arrival_period",
+     "mean_abs_contribution": 0.033330817375415434,
+     "permutation_auc_drop": -0.0002158070569954207,
+     "label": "Time of arrival"
+    }
+   ],
+   "boosting": [
+    {
+     "feature": "esi",
+     "mean_abs_contribution": 0.8417390358508228,
+     "permutation_auc_drop": 0.19672821739974447,
+     "label": "Triage level (ESI)"
+    },
+    {
+     "feature": "age",
+     "mean_abs_contribution": 0.40249159991593814,
+     "permutation_auc_drop": 0.04451755365718509,
+     "label": "Age"
+    },
+    {
+     "feature": "chief_complaint",
+     "mean_abs_contribution": 0.8956409666085874,
+     "permutation_auc_drop": 0.03522965293470167,
+     "label": "Main complaint"
+    },
+    {
+     "feature": "spo2",
+     "mean_abs_contribution": 0.044461357059073246,
+     "permutation_auc_drop": 0.0013922625070770984,
+     "label": "Oxygen level"
+    },
+    {
+     "feature": "heart_rate",
+     "mean_abs_contribution": 0.06626423936138325,
+     "permutation_auc_drop": 0.001048336339217378,
+     "label": "Heart rate"
+    },
+    {
+     "feature": "resp_rate",
+     "mean_abs_contribution": 0.06156000469454761,
+     "permutation_auc_drop": 0.0007776304228380715,
+     "label": "Breathing rate"
+    },
+    {
+     "feature": "recent_ed_visits_12m",
+     "mean_abs_contribution": 0.018585796941522886,
+     "permutation_auc_drop": 0.0006575126329428175,
+     "label": "ED visits in past year"
+    },
+    {
+     "feature": "systolic_bp",
+     "mean_abs_contribution": 0.039246318578249936,
+     "permutation_auc_drop": 0.0004942203682671842,
+     "label": "Blood pressure"
+    },
+    {
+     "feature": "temp_c",
+     "mean_abs_contribution": 0.01787945141763541,
+     "permutation_auc_drop": 0.00045117652729864677,
+     "label": "Temperature"
+    },
+    {
+     "feature": "arrival_mode",
+     "mean_abs_contribution": 0.01058464044767469,
+     "permutation_auc_drop": 0.00024451383712520425,
+     "label": "Arrival mode"
+    },
+    {
+     "feature": "arrival_period",
+     "mean_abs_contribution": 0.03614956387437053,
+     "permutation_auc_drop": 0.00024003962907318913,
+     "label": "Time of arrival"
+    },
+    {
+     "feature": "winter",
+     "mean_abs_contribution": 0.0065514961699875834,
+     "permutation_auc_drop": -4.833451034376897e-06,
+     "label": "Winter season"
+    },
+    {
+     "feature": "weekend",
+     "mean_abs_contribution": 0.00161278525360866,
+     "permutation_auc_drop": -2.8804755488794537e-05,
+     "label": "Weekend"
+    }
+   ]
+  },
+  "fairness_fixed": [
+   {
+    "group": "All patients",
+    "n": 20686,
+    "positives": 3492,
+    "negatives": 17194,
+    "prevalence": 0.16880982306874215,
+    "auc": 0.8567195781154376,
+    "average_precision": 0.5566587728387629,
+    "brier": 0.10183192544127143,
+    "mean_predicted": 0.17070713623338302,
+    "calibration_gap_pts": 0.1897313164640868,
+    "tp": 368,
+    "fp": 106,
+    "fn": 3124,
+    "tn": 17088,
+    "flags": 474,
+    "flag_rate": 0.022914048148506234,
+    "precision": 0.7763713080168776,
+    "recall": 0.10538373424971363,
+    "fnr": 0.8946162657502864,
+    "fpr": 0.006164941258578574,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicaid/CHIP",
+    "n": 7071,
+    "positives": 802,
+    "negatives": 6269,
+    "prevalence": 0.11342101541507565,
+    "auc": 0.8694852436622592,
+    "average_precision": 0.5081976791517107,
+    "brier": 0.07439042571251267,
+    "mean_predicted": 0.1181393871796464,
+    "calibration_gap_pts": 0.4718371764570739,
+    "tp": 60,
+    "fp": 13,
+    "fn": 742,
+    "tn": 6256,
+    "flags": 73,
+    "flag_rate": 0.010323858011596663,
+    "precision": 0.821917808219178,
+    "recall": 0.07481296758104738,
+    "fnr": 0.9251870324189526,
+    "fpr": 0.0020736959642686232,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicare",
+    "n": 4578,
+    "positives": 1284,
+    "negatives": 3294,
+    "prevalence": 0.2804718217562254,
+    "auc": 0.8029852729497794,
+    "average_precision": 0.6010978037199138,
+    "brier": 0.15506679426866185,
+    "mean_predicted": 0.2810406064601788,
+    "calibration_gap_pts": 0.05687847039533844,
+    "tp": 194,
+    "fp": 64,
+    "fn": 1090,
+    "tn": 3230,
+    "flags": 258,
+    "flag_rate": 0.0563564875491481,
+    "precision": 0.751937984496124,
+    "recall": 0.15109034267912771,
+    "fnr": 0.8489096573208723,
+    "fpr": 0.019429265330904676,
+    "auc_level": "red",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "red"
+   },
+   {
+    "group": "Commercial",
+    "n": 6972,
+    "positives": 1117,
+    "negatives": 5855,
+    "prevalence": 0.1602122776821572,
+    "auc": 0.8506417779109745,
+    "average_precision": 0.5372907834914691,
+    "brier": 0.09929536547451082,
+    "mean_predicted": 0.16076001839834275,
+    "calibration_gap_pts": 0.05477407161855463,
+    "tp": 90,
+    "fp": 26,
+    "fn": 1027,
+    "tn": 5829,
+    "flags": 116,
+    "flag_rate": 0.01663798049340218,
+    "precision": 0.7758620689655172,
+    "recall": 0.08057296329453895,
+    "fnr": 0.9194270367054611,
+    "fpr": 0.0044406490179333905,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Uninsured",
+    "n": 1622,
+    "positives": 195,
+    "negatives": 1427,
+    "prevalence": 0.12022194821208385,
+    "auc": 0.8697284962176343,
+    "average_precision": 0.5118513131445841,
+    "brier": 0.0777396451291422,
+    "mean_predicted": 0.12099307064260516,
+    "calibration_gap_pts": 0.07711224305213121,
+    "tp": 8,
+    "fp": 1,
+    "fn": 187,
+    "tn": 1426,
+    "flags": 9,
+    "flag_rate": 0.005548705302096177,
+    "precision": 0.8888888888888888,
+    "recall": 0.041025641025641026,
+    "fnr": 0.958974358974359,
+    "fpr": 0.000700770847932726,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "amber",
+    "worst_level": "amber"
+   },
+   {
+    "group": "Other (VA, workers' comp, auto)",
+    "n": 443,
+    "positives": 94,
+    "negatives": 349,
+    "prevalence": 0.21218961625282168,
+    "auc": 0.83545692861062,
+    "average_precision": 0.6326910972027961,
+    "brier": 0.11784138333018418,
+    "mean_predicted": 0.2081505827228707,
+    "calibration_gap_pts": -0.40390335299509694,
+    "tp": 16,
+    "fp": 2,
+    "fn": 78,
+    "tn": 347,
+    "flags": 18,
+    "flag_rate": 0.040632054176072234,
+    "precision": 0.8888888888888888,
+    "recall": 0.1702127659574468,
+    "fnr": 0.8297872340425532,
+    "fpr": 0.0057306590257879654,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   }
+  ],
+  "fairness_deployed": [
+   {
+    "group": "All patients",
+    "n": 20686,
+    "positives": 3492,
+    "negatives": 17194,
+    "prevalence": 0.16880982306874215,
+    "auc": 0.8567195781154376,
+    "average_precision": 0.5566587728387629,
+    "brier": 0.10183192544127143,
+    "mean_predicted": 0.17070713623338302,
+    "calibration_gap_pts": 0.1897313164640868,
+    "tp": 730,
+    "fp": 345,
+    "fn": 2762,
+    "tn": 16849,
+    "flags": 1075,
+    "flag_rate": 0.05196751426085275,
+    "precision": 0.6790697674418604,
+    "recall": 0.20904925544100803,
+    "fnr": 0.790950744558992,
+    "fpr": 0.020065139001977435,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicaid/CHIP",
+    "n": 7071,
+    "positives": 802,
+    "negatives": 6269,
+    "prevalence": 0.11342101541507565,
+    "auc": 0.8694852436622592,
+    "average_precision": 0.5081976791517107,
+    "brier": 0.07439042571251267,
+    "mean_predicted": 0.1181393871796464,
+    "calibration_gap_pts": 0.4718371764570739,
+    "tp": 93,
+    "fp": 24,
+    "fn": 709,
+    "tn": 6245,
+    "flags": 117,
+    "flag_rate": 0.016546457361052185,
+    "precision": 0.7948717948717948,
+    "recall": 0.11596009975062344,
+    "fnr": 0.8840399002493765,
+    "fpr": 0.003828361780188228,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "amber",
+    "worst_level": "amber"
+   },
+   {
+    "group": "Medicare",
+    "n": 4578,
+    "positives": 1284,
+    "negatives": 3294,
+    "prevalence": 0.2804718217562254,
+    "auc": 0.8029852729497794,
+    "average_precision": 0.6010978037199138,
+    "brier": 0.15506679426866185,
+    "mean_predicted": 0.2810406064601788,
+    "calibration_gap_pts": 0.05687847039533844,
+    "tp": 402,
+    "fp": 218,
+    "fn": 882,
+    "tn": 3076,
+    "flags": 620,
+    "flag_rate": 0.13543031891655744,
+    "precision": 0.6483870967741936,
+    "recall": 0.3130841121495327,
+    "fnr": 0.6869158878504673,
+    "fpr": 0.06618093503339405,
+    "auc_level": "red",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "red"
+   },
+   {
+    "group": "Commercial",
+    "n": 6972,
+    "positives": 1117,
+    "negatives": 5855,
+    "prevalence": 0.1602122776821572,
+    "auc": 0.8506417779109745,
+    "average_precision": 0.5372907834914691,
+    "brier": 0.09929536547451082,
+    "mean_predicted": 0.16076001839834275,
+    "calibration_gap_pts": 0.05477407161855463,
+    "tp": 192,
+    "fp": 90,
+    "fn": 925,
+    "tn": 5765,
+    "flags": 282,
+    "flag_rate": 0.04044750430292599,
+    "precision": 0.6808510638297872,
+    "recall": 0.1718889883616831,
+    "fnr": 0.8281110116383169,
+    "fpr": 0.015371477369769428,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Uninsured",
+    "n": 1622,
+    "positives": 195,
+    "negatives": 1427,
+    "prevalence": 0.12022194821208385,
+    "auc": 0.8697284962176343,
+    "average_precision": 0.5118513131445841,
+    "brier": 0.0777396451291422,
+    "mean_predicted": 0.12099307064260516,
+    "calibration_gap_pts": 0.07711224305213121,
+    "tp": 16,
+    "fp": 4,
+    "fn": 179,
+    "tn": 1423,
+    "flags": 20,
+    "flag_rate": 0.012330456226880395,
+    "precision": 0.8,
+    "recall": 0.08205128205128205,
+    "fnr": 0.9179487179487179,
+    "fpr": 0.002803083391730904,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "red",
+    "worst_level": "red"
+   },
+   {
+    "group": "Other (VA, workers' comp, auto)",
+    "n": 443,
+    "positives": 94,
+    "negatives": 349,
+    "prevalence": 0.21218961625282168,
+    "auc": 0.83545692861062,
+    "average_precision": 0.6326910972027961,
+    "brier": 0.11784138333018418,
+    "mean_predicted": 0.2081505827228707,
+    "calibration_gap_pts": -0.40390335299509694,
+    "tp": 27,
+    "fp": 9,
+    "fn": 67,
+    "tn": 340,
+    "flags": 36,
+    "flag_rate": 0.08126410835214447,
+    "precision": 0.75,
+    "recall": 0.2872340425531915,
+    "fnr": 0.7127659574468085,
+    "fpr": 0.025787965616045846,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   }
+  ],
+  "fairness_case_mix": {
+   "definition": "Among true admissions in the test quarter, each payer group's miss rate under the deployed policy versus the rate expected if its patients were missed like everyone with the same triage level (ESI) and age band. Unexplained points = observed minus expected.",
+   "strata": [
+    "esi",
+    "age_band"
+   ],
+   "rows": [
+    {
+     "group": "Medicaid/CHIP",
+     "admissions": 802,
+     "observed_miss_rate": 0.8840399002493765,
+     "expected_from_case_mix": 0.8929984440798465,
+     "gap_vs_overall_pts": 9.308915569038456,
+     "explained_by_case_mix_pts": 10.204769952085456,
+     "unexplained_pts": -0.8958543830470012,
+     "level": "ok"
+    },
+    {
+     "group": "Medicare",
+     "admissions": 1284,
+     "observed_miss_rate": 0.6869158878504673,
+     "expected_from_case_mix": 0.6880001650969608,
+     "gap_vs_overall_pts": -10.403485670852463,
+     "explained_by_case_mix_pts": -10.295057946203112,
+     "unexplained_pts": -0.10842772464935146,
+     "level": "ok"
+    },
+    {
+     "group": "Commercial",
+     "admissions": 1117,
+     "observed_miss_rate": 0.8281110116383169,
+     "expected_from_case_mix": 0.8231648584283017,
+     "gap_vs_overall_pts": 3.716026707932496,
+     "explained_by_case_mix_pts": 3.2214113869309724,
+     "unexplained_pts": 0.4946153210015236,
+     "level": "ok"
+    },
+    {
+     "group": "Uninsured",
+     "admissions": 195,
+     "observed_miss_rate": 0.9179487179487179,
+     "expected_from_case_mix": 0.8921168258871446,
+     "gap_vs_overall_pts": 12.699797338972596,
+     "explained_by_case_mix_pts": 10.116608132815264,
+     "unexplained_pts": 2.5831892061573325,
+     "level": "ok"
+    },
+    {
+     "group": "Other (VA, workers' comp, auto)",
+     "admissions": 94,
+     "observed_miss_rate": 0.7127659574468085,
+     "expected_from_case_mix": 0.7338841271389293,
+     "gap_vs_overall_pts": -7.818478711218346,
+     "explained_by_case_mix_pts": -5.706661742006269,
+     "unexplained_pts": -2.111816969212077,
+     "level": "ok"
+    }
+   ]
+  },
+  "policy_by_base_threshold": {
+   "0.50": {
+    "policy": {
+     "n": 20686,
+     "positives": 3492,
+     "negatives": 17194,
+     "prevalence": 0.16880982306874215,
+     "auc": 0.8567195781154376,
+     "average_precision": 0.5566587728387629,
+     "brier": 0.10183192544127143,
+     "mean_predicted": 0.17070713623338302,
+     "calibration_gap_pts": 0.1897313164640868,
+     "tp": 1099,
+     "fp": 631,
+     "fn": 2393,
+     "tn": 16563,
+     "flags": 1730,
+     "flag_rate": 0.08363144155467465,
+     "precision": 0.6352601156069364,
+     "recall": 0.3147193585337915,
+     "fnr": 0.6852806414662085,
+     "fpr": 0.03669884843550075
+    },
+    "alerts_per_day": 18.82608695652174,
+    "fairness": [
+     {
+      "group": "All patients",
+      "n": 20686,
+      "positives": 3492,
+      "negatives": 17194,
+      "prevalence": 0.16880982306874215,
+      "auc": 0.8567195781154376,
+      "average_precision": 0.5566587728387629,
+      "brier": 0.10183192544127143,
+      "mean_predicted": 0.17070713623338302,
+      "calibration_gap_pts": 0.1897313164640868,
+      "tp": 1099,
+      "fp": 631,
+      "fn": 2393,
+      "tn": 16563,
+      "flags": 1730,
+      "flag_rate": 0.08363144155467465,
+      "precision": 0.6352601156069364,
+      "recall": 0.3147193585337915,
+      "fnr": 0.6852806414662085,
+      "fpr": 0.03669884843550075,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Medicaid/CHIP",
+      "n": 7071,
+      "positives": 802,
+      "negatives": 6269,
+      "prevalence": 0.11342101541507565,
+      "auc": 0.8694852436622592,
+      "average_precision": 0.5081976791517107,
+      "brier": 0.07439042571251267,
+      "mean_predicted": 0.1181393871796464,
+      "calibration_gap_pts": 0.4718371764570739,
+      "tp": 156,
+      "fp": 64,
+      "fn": 646,
+      "tn": 6205,
+      "flags": 220,
+      "flag_rate": 0.03111299674727761,
+      "precision": 0.7090909090909091,
+      "recall": 0.19451371571072318,
+      "fnr": 0.8054862842892768,
+      "fpr": 0.010208964747168607,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "red",
+      "worst_level": "red"
+     },
+     {
+      "group": "Medicare",
+      "n": 4578,
+      "positives": 1284,
+      "negatives": 3294,
+      "prevalence": 0.2804718217562254,
+      "auc": 0.8029852729497794,
+      "average_precision": 0.6010978037199138,
+      "brier": 0.15506679426866185,
+      "mean_predicted": 0.2810406064601788,
+      "calibration_gap_pts": 0.05687847039533844,
+      "tp": 553,
+      "fp": 336,
+      "fn": 731,
+      "tn": 2958,
+      "flags": 889,
+      "flag_rate": 0.19418960244648317,
+      "precision": 0.6220472440944882,
+      "recall": 0.43068535825545173,
+      "fnr": 0.5693146417445483,
+      "fpr": 0.10200364298724955,
+      "auc_level": "red",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "red"
+     },
+     {
+      "group": "Commercial",
+      "n": 6972,
+      "positives": 1117,
+      "negatives": 5855,
+      "prevalence": 0.1602122776821572,
+      "auc": 0.8506417779109745,
+      "average_precision": 0.5372907834914691,
+      "brier": 0.09929536547451082,
+      "mean_predicted": 0.16076001839834275,
+      "calibration_gap_pts": 0.05477407161855463,
+      "tp": 320,
+      "fp": 195,
+      "fn": 797,
+      "tn": 5660,
+      "flags": 515,
+      "flag_rate": 0.07386689615605278,
+      "precision": 0.6213592233009708,
+      "recall": 0.2864816472694718,
+      "fnr": 0.7135183527305282,
+      "fpr": 0.033304867634500426,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "n": 1622,
+      "positives": 195,
+      "negatives": 1427,
+      "prevalence": 0.12022194821208385,
+      "auc": 0.8697284962176343,
+      "average_precision": 0.5118513131445841,
+      "brier": 0.0777396451291422,
+      "mean_predicted": 0.12099307064260516,
+      "calibration_gap_pts": 0.07711224305213121,
+      "tp": 36,
+      "fp": 19,
+      "fn": 159,
+      "tn": 1408,
+      "flags": 55,
+      "flag_rate": 0.03390875462392109,
+      "precision": 0.6545454545454545,
+      "recall": 0.18461538461538463,
+      "fnr": 0.8153846153846154,
+      "fpr": 0.013314646110721794,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "red",
+      "worst_level": "red"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "n": 443,
+      "positives": 94,
+      "negatives": 349,
+      "prevalence": 0.21218961625282168,
+      "auc": 0.83545692861062,
+      "average_precision": 0.6326910972027961,
+      "brier": 0.11784138333018418,
+      "mean_predicted": 0.2081505827228707,
+      "calibration_gap_pts": -0.40390335299509694,
+      "tp": 34,
+      "fp": 17,
+      "fn": 60,
+      "tn": 332,
+      "flags": 51,
+      "flag_rate": 0.11512415349887133,
+      "precision": 0.6666666666666666,
+      "recall": 0.3617021276595745,
+      "fnr": 0.6382978723404256,
+      "fpr": 0.04871060171919771,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     }
+    ],
+    "case_mix": [
+     {
+      "group": "Medicaid/CHIP",
+      "admissions": 802,
+      "observed_miss_rate": 0.8054862842892768,
+      "expected_from_case_mix": 0.8171640094682933,
+      "gap_vs_overall_pts": 12.020564282306834,
+      "explained_by_case_mix_pts": 13.188336800208479,
+      "unexplained_pts": -1.167772517901644,
+      "level": "ok"
+     },
+     {
+      "group": "Medicare",
+      "admissions": 1284,
+      "observed_miss_rate": 0.5693146417445483,
+      "expected_from_case_mix": 0.5684407897703602,
+      "gap_vs_overall_pts": -11.596599972166022,
+      "explained_by_case_mix_pts": -11.683985169584831,
+      "unexplained_pts": 0.08738519741881001,
+      "level": "ok"
+     },
+     {
+      "group": "Commercial",
+      "admissions": 1117,
+      "observed_miss_rate": 0.7135183527305282,
+      "expected_from_case_mix": 0.7121278676144599,
+      "gap_vs_overall_pts": 2.823771126431973,
+      "explained_by_case_mix_pts": 2.6847226148251413,
+      "unexplained_pts": 0.13904851160683185,
+      "level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "admissions": 195,
+      "observed_miss_rate": 0.8153846153846154,
+      "expected_from_case_mix": 0.794898442892707,
+      "gap_vs_overall_pts": 13.010397391840689,
+      "explained_by_case_mix_pts": 10.961780142649847,
+      "unexplained_pts": 2.0486172491908428,
+      "level": "ok"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "admissions": 94,
+      "observed_miss_rate": 0.6382978723404256,
+      "expected_from_case_mix": 0.609621977147412,
+      "gap_vs_overall_pts": -4.698276912578292,
+      "explained_by_case_mix_pts": -7.565866431879654,
+      "unexplained_pts": 2.867589519301361,
+      "level": "ok"
+     }
+    ]
+   },
+   "0.60": {
+    "policy": {
+     "n": 20686,
+     "positives": 3492,
+     "negatives": 17194,
+     "prevalence": 0.16880982306874215,
+     "auc": 0.8567195781154376,
+     "average_precision": 0.5566587728387629,
+     "brier": 0.10183192544127143,
+     "mean_predicted": 0.17070713623338302,
+     "calibration_gap_pts": 0.1897313164640868,
+     "tp": 873,
+     "fp": 447,
+     "fn": 2619,
+     "tn": 16747,
+     "flags": 1320,
+     "flag_rate": 0.06381127332495408,
+     "precision": 0.6613636363636364,
+     "recall": 0.25,
+     "fnr": 0.75,
+     "fpr": 0.025997440967779457
+    },
+    "alerts_per_day": 14.358695652173912,
+    "fairness": [
+     {
+      "group": "All patients",
+      "n": 20686,
+      "positives": 3492,
+      "negatives": 17194,
+      "prevalence": 0.16880982306874215,
+      "auc": 0.8567195781154376,
+      "average_precision": 0.5566587728387629,
+      "brier": 0.10183192544127143,
+      "mean_predicted": 0.17070713623338302,
+      "calibration_gap_pts": 0.1897313164640868,
+      "tp": 873,
+      "fp": 447,
+      "fn": 2619,
+      "tn": 16747,
+      "flags": 1320,
+      "flag_rate": 0.06381127332495408,
+      "precision": 0.6613636363636364,
+      "recall": 0.25,
+      "fnr": 0.75,
+      "fpr": 0.025997440967779457,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Medicaid/CHIP",
+      "n": 7071,
+      "positives": 802,
+      "negatives": 6269,
+      "prevalence": 0.11342101541507565,
+      "auc": 0.8694852436622592,
+      "average_precision": 0.5081976791517107,
+      "brier": 0.07439042571251267,
+      "mean_predicted": 0.1181393871796464,
+      "calibration_gap_pts": 0.4718371764570739,
+      "tp": 108,
+      "fp": 30,
+      "fn": 694,
+      "tn": 6239,
+      "flags": 138,
+      "flag_rate": 0.01951633432329232,
+      "precision": 0.782608695652174,
+      "recall": 0.13466334164588528,
+      "fnr": 0.8653366583541147,
+      "fpr": 0.004785452225235284,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "red",
+      "worst_level": "red"
+     },
+     {
+      "group": "Medicare",
+      "n": 4578,
+      "positives": 1284,
+      "negatives": 3294,
+      "prevalence": 0.2804718217562254,
+      "auc": 0.8029852729497794,
+      "average_precision": 0.6010978037199138,
+      "brier": 0.15506679426866185,
+      "mean_predicted": 0.2810406064601788,
+      "calibration_gap_pts": 0.05687847039533844,
+      "tp": 486,
+      "fp": 278,
+      "fn": 798,
+      "tn": 3016,
+      "flags": 764,
+      "flag_rate": 0.16688510266491918,
+      "precision": 0.6361256544502618,
+      "recall": 0.37850467289719625,
+      "fnr": 0.6214953271028038,
+      "fpr": 0.08439587128111718,
+      "auc_level": "red",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "red"
+     },
+     {
+      "group": "Commercial",
+      "n": 6972,
+      "positives": 1117,
+      "negatives": 5855,
+      "prevalence": 0.1602122776821572,
+      "auc": 0.8506417779109745,
+      "average_precision": 0.5372907834914691,
+      "brier": 0.09929536547451082,
+      "mean_predicted": 0.16076001839834275,
+      "calibration_gap_pts": 0.05477407161855463,
+      "tp": 228,
+      "fp": 121,
+      "fn": 889,
+      "tn": 5734,
+      "flags": 349,
+      "flag_rate": 0.050057372346528975,
+      "precision": 0.6532951289398281,
+      "recall": 0.20411817367949867,
+      "fnr": 0.7958818263205013,
+      "fpr": 0.020666097352690007,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "n": 1622,
+      "positives": 195,
+      "negatives": 1427,
+      "prevalence": 0.12022194821208385,
+      "auc": 0.8697284962176343,
+      "average_precision": 0.5118513131445841,
+      "brier": 0.0777396451291422,
+      "mean_predicted": 0.12099307064260516,
+      "calibration_gap_pts": 0.07711224305213121,
+      "tp": 22,
+      "fp": 7,
+      "fn": 173,
+      "tn": 1420,
+      "flags": 29,
+      "flag_rate": 0.017879161528976572,
+      "precision": 0.7586206896551724,
+      "recall": 0.11282051282051282,
+      "fnr": 0.8871794871794871,
+      "fpr": 0.004905395935529082,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "red",
+      "worst_level": "red"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "n": 443,
+      "positives": 94,
+      "negatives": 349,
+      "prevalence": 0.21218961625282168,
+      "auc": 0.83545692861062,
+      "average_precision": 0.6326910972027961,
+      "brier": 0.11784138333018418,
+      "mean_predicted": 0.2081505827228707,
+      "calibration_gap_pts": -0.40390335299509694,
+      "tp": 29,
+      "fp": 11,
+      "fn": 65,
+      "tn": 338,
+      "flags": 40,
+      "flag_rate": 0.09029345372460497,
+      "precision": 0.725,
+      "recall": 0.30851063829787234,
+      "fnr": 0.6914893617021277,
+      "fpr": 0.03151862464183381,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     }
+    ],
+    "case_mix": [
+     {
+      "group": "Medicaid/CHIP",
+      "admissions": 802,
+      "observed_miss_rate": 0.8653366583541147,
+      "expected_from_case_mix": 0.8765002594174781,
+      "gap_vs_overall_pts": 11.533665835411465,
+      "explained_by_case_mix_pts": 12.650025941747812,
+      "unexplained_pts": -1.1163601063363449,
+      "level": "ok"
+     },
+     {
+      "group": "Medicare",
+      "admissions": 1284,
+      "observed_miss_rate": 0.6214953271028038,
+      "expected_from_case_mix": 0.6228972283337637,
+      "gap_vs_overall_pts": -12.850467289719624,
+      "explained_by_case_mix_pts": -12.71027716662363,
+      "unexplained_pts": -0.14019012309599566,
+      "level": "ok"
+     },
+     {
+      "group": "Commercial",
+      "admissions": 1117,
+      "observed_miss_rate": 0.7958818263205013,
+      "expected_from_case_mix": 0.7893091131130041,
+      "gap_vs_overall_pts": 4.588182632050131,
+      "explained_by_case_mix_pts": 3.9309113113004113,
+      "unexplained_pts": 0.6572713207497194,
+      "level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "admissions": 195,
+      "observed_miss_rate": 0.8871794871794871,
+      "expected_from_case_mix": 0.8698139748632535,
+      "gap_vs_overall_pts": 13.717948717948714,
+      "explained_by_case_mix_pts": 11.981397486325351,
+      "unexplained_pts": 1.7365512316233622,
+      "level": "ok"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "admissions": 94,
+      "observed_miss_rate": 0.6914893617021277,
+      "expected_from_case_mix": 0.691220705543296,
+      "gap_vs_overall_pts": -5.851063829787229,
+      "explained_by_case_mix_pts": -5.8779294456704045,
+      "unexplained_pts": 0.02686561588317593,
+      "level": "ok"
+     }
+    ]
+   },
+   "0.70": {
+    "policy": {
+     "n": 20686,
+     "positives": 3492,
+     "negatives": 17194,
+     "prevalence": 0.16880982306874215,
+     "auc": 0.8567195781154376,
+     "average_precision": 0.5566587728387629,
+     "brier": 0.10183192544127143,
+     "mean_predicted": 0.17070713623338302,
+     "calibration_gap_pts": 0.1897313164640868,
+     "tp": 730,
+     "fp": 345,
+     "fn": 2762,
+     "tn": 16849,
+     "flags": 1075,
+     "flag_rate": 0.05196751426085275,
+     "precision": 0.6790697674418604,
+     "recall": 0.20904925544100803,
+     "fnr": 0.790950744558992,
+     "fpr": 0.020065139001977435
+    },
+    "alerts_per_day": 11.695652173913043,
+    "fairness": [
+     {
+      "group": "All patients",
+      "n": 20686,
+      "positives": 3492,
+      "negatives": 17194,
+      "prevalence": 0.16880982306874215,
+      "auc": 0.8567195781154376,
+      "average_precision": 0.5566587728387629,
+      "brier": 0.10183192544127143,
+      "mean_predicted": 0.17070713623338302,
+      "calibration_gap_pts": 0.1897313164640868,
+      "tp": 730,
+      "fp": 345,
+      "fn": 2762,
+      "tn": 16849,
+      "flags": 1075,
+      "flag_rate": 0.05196751426085275,
+      "precision": 0.6790697674418604,
+      "recall": 0.20904925544100803,
+      "fnr": 0.790950744558992,
+      "fpr": 0.020065139001977435,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Medicaid/CHIP",
+      "n": 7071,
+      "positives": 802,
+      "negatives": 6269,
+      "prevalence": 0.11342101541507565,
+      "auc": 0.8694852436622592,
+      "average_precision": 0.5081976791517107,
+      "brier": 0.07439042571251267,
+      "mean_predicted": 0.1181393871796464,
+      "calibration_gap_pts": 0.4718371764570739,
+      "tp": 93,
+      "fp": 24,
+      "fn": 709,
+      "tn": 6245,
+      "flags": 117,
+      "flag_rate": 0.016546457361052185,
+      "precision": 0.7948717948717948,
+      "recall": 0.11596009975062344,
+      "fnr": 0.8840399002493765,
+      "fpr": 0.003828361780188228,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "amber",
+      "worst_level": "amber"
+     },
+     {
+      "group": "Medicare",
+      "n": 4578,
+      "positives": 1284,
+      "negatives": 3294,
+      "prevalence": 0.2804718217562254,
+      "auc": 0.8029852729497794,
+      "average_precision": 0.6010978037199138,
+      "brier": 0.15506679426866185,
+      "mean_predicted": 0.2810406064601788,
+      "calibration_gap_pts": 0.05687847039533844,
+      "tp": 402,
+      "fp": 218,
+      "fn": 882,
+      "tn": 3076,
+      "flags": 620,
+      "flag_rate": 0.13543031891655744,
+      "precision": 0.6483870967741936,
+      "recall": 0.3130841121495327,
+      "fnr": 0.6869158878504673,
+      "fpr": 0.06618093503339405,
+      "auc_level": "red",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "red"
+     },
+     {
+      "group": "Commercial",
+      "n": 6972,
+      "positives": 1117,
+      "negatives": 5855,
+      "prevalence": 0.1602122776821572,
+      "auc": 0.8506417779109745,
+      "average_precision": 0.5372907834914691,
+      "brier": 0.09929536547451082,
+      "mean_predicted": 0.16076001839834275,
+      "calibration_gap_pts": 0.05477407161855463,
+      "tp": 192,
+      "fp": 90,
+      "fn": 925,
+      "tn": 5765,
+      "flags": 282,
+      "flag_rate": 0.04044750430292599,
+      "precision": 0.6808510638297872,
+      "recall": 0.1718889883616831,
+      "fnr": 0.8281110116383169,
+      "fpr": 0.015371477369769428,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "n": 1622,
+      "positives": 195,
+      "negatives": 1427,
+      "prevalence": 0.12022194821208385,
+      "auc": 0.8697284962176343,
+      "average_precision": 0.5118513131445841,
+      "brier": 0.0777396451291422,
+      "mean_predicted": 0.12099307064260516,
+      "calibration_gap_pts": 0.07711224305213121,
+      "tp": 16,
+      "fp": 4,
+      "fn": 179,
+      "tn": 1423,
+      "flags": 20,
+      "flag_rate": 0.012330456226880395,
+      "precision": 0.8,
+      "recall": 0.08205128205128205,
+      "fnr": 0.9179487179487179,
+      "fpr": 0.002803083391730904,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "red",
+      "worst_level": "red"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "n": 443,
+      "positives": 94,
+      "negatives": 349,
+      "prevalence": 0.21218961625282168,
+      "auc": 0.83545692861062,
+      "average_precision": 0.6326910972027961,
+      "brier": 0.11784138333018418,
+      "mean_predicted": 0.2081505827228707,
+      "calibration_gap_pts": -0.40390335299509694,
+      "tp": 27,
+      "fp": 9,
+      "fn": 67,
+      "tn": 340,
+      "flags": 36,
+      "flag_rate": 0.08126410835214447,
+      "precision": 0.75,
+      "recall": 0.2872340425531915,
+      "fnr": 0.7127659574468085,
+      "fpr": 0.025787965616045846,
+      "auc_level": "ok",
+      "calibration_level": "ok",
+      "fnr_level": "ok",
+      "worst_level": "ok"
+     }
+    ],
+    "case_mix": [
+     {
+      "group": "Medicaid/CHIP",
+      "admissions": 802,
+      "observed_miss_rate": 0.8840399002493765,
+      "expected_from_case_mix": 0.8929984440798465,
+      "gap_vs_overall_pts": 9.308915569038456,
+      "explained_by_case_mix_pts": 10.204769952085456,
+      "unexplained_pts": -0.8958543830470012,
+      "level": "ok"
+     },
+     {
+      "group": "Medicare",
+      "admissions": 1284,
+      "observed_miss_rate": 0.6869158878504673,
+      "expected_from_case_mix": 0.6880001650969608,
+      "gap_vs_overall_pts": -10.403485670852463,
+      "explained_by_case_mix_pts": -10.295057946203112,
+      "unexplained_pts": -0.10842772464935146,
+      "level": "ok"
+     },
+     {
+      "group": "Commercial",
+      "admissions": 1117,
+      "observed_miss_rate": 0.8281110116383169,
+      "expected_from_case_mix": 0.8231648584283017,
+      "gap_vs_overall_pts": 3.716026707932496,
+      "explained_by_case_mix_pts": 3.2214113869309724,
+      "unexplained_pts": 0.4946153210015236,
+      "level": "ok"
+     },
+     {
+      "group": "Uninsured",
+      "admissions": 195,
+      "observed_miss_rate": 0.9179487179487179,
+      "expected_from_case_mix": 0.8921168258871446,
+      "gap_vs_overall_pts": 12.699797338972596,
+      "explained_by_case_mix_pts": 10.116608132815264,
+      "unexplained_pts": 2.5831892061573325,
+      "level": "ok"
+     },
+     {
+      "group": "Other (VA, workers' comp, auto)",
+      "admissions": 94,
+      "observed_miss_rate": 0.7127659574468085,
+      "expected_from_case_mix": 0.7338841271389293,
+      "gap_vs_overall_pts": -7.818478711218346,
+      "explained_by_case_mix_pts": -5.706661742006269,
+      "unexplained_pts": -2.111816969212077,
+      "level": "ok"
+     }
+    ]
+   }
+  },
+  "fairness_with_payer": [
+   {
+    "group": "All patients",
+    "n": 20686,
+    "positives": 3492,
+    "negatives": 17194,
+    "prevalence": 0.16880982306874215,
+    "auc": 0.8566901984109377,
+    "average_precision": 0.5568114143422925,
+    "brier": 0.10185731722689474,
+    "mean_predicted": 0.17075685644256614,
+    "calibration_gap_pts": 0.19470333738239864,
+    "tp": 362,
+    "fp": 107,
+    "fn": 3130,
+    "tn": 17087,
+    "flags": 469,
+    "flag_rate": 0.022672338779851108,
+    "precision": 0.7718550106609808,
+    "recall": 0.1036655211912944,
+    "fnr": 0.8963344788087056,
+    "fpr": 0.006223101081772711,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicaid/CHIP",
+    "n": 7071,
+    "positives": 802,
+    "negatives": 6269,
+    "prevalence": 0.11342101541507565,
+    "auc": 0.8696630572237456,
+    "average_precision": 0.5077937919249212,
+    "brier": 0.07436138960979988,
+    "mean_predicted": 0.11742511253273895,
+    "calibration_gap_pts": 0.4004097117663294,
+    "tp": 62,
+    "fp": 13,
+    "fn": 740,
+    "tn": 6256,
+    "flags": 75,
+    "flag_rate": 0.010606703436571913,
+    "precision": 0.8266666666666667,
+    "recall": 0.0773067331670823,
+    "fnr": 0.9226932668329177,
+    "fpr": 0.0020736959642686232,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicare",
+    "n": 4578,
+    "positives": 1284,
+    "negatives": 3294,
+    "prevalence": 0.2804718217562254,
+    "auc": 0.802782884769249,
+    "average_precision": 0.6006253123639473,
+    "brier": 0.1550661627265438,
+    "mean_predicted": 0.2742313148062823,
+    "calibration_gap_pts": -0.6240506949943103,
+    "tp": 170,
+    "fp": 52,
+    "fn": 1114,
+    "tn": 3242,
+    "flags": 222,
+    "flag_rate": 0.04849279161205767,
+    "precision": 0.7657657657657657,
+    "recall": 0.13239875389408098,
+    "fnr": 0.867601246105919,
+    "fpr": 0.015786278081360048,
+    "auc_level": "red",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "red"
+   },
+   {
+    "group": "Commercial",
+    "n": 6972,
+    "positives": 1117,
+    "negatives": 5855,
+    "prevalence": 0.1602122776821572,
+    "auc": 0.850569148330246,
+    "average_precision": 0.537321696682426,
+    "brier": 0.09938003194842818,
+    "mean_predicted": 0.16445953190865176,
+    "calibration_gap_pts": 0.4247254226494551,
+    "tp": 100,
+    "fp": 35,
+    "fn": 1017,
+    "tn": 5820,
+    "flags": 135,
+    "flag_rate": 0.0193631669535284,
+    "precision": 0.7407407407407407,
+    "recall": 0.08952551477170993,
+    "fnr": 0.9104744852282901,
+    "fpr": 0.005977796754910333,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Uninsured",
+    "n": 1622,
+    "positives": 195,
+    "negatives": 1427,
+    "prevalence": 0.12022194821208385,
+    "auc": 0.8698938062638133,
+    "average_precision": 0.5115953979828156,
+    "brier": 0.07761655769461906,
+    "mean_predicted": 0.12104753428337904,
+    "calibration_gap_pts": 0.08255860712951951,
+    "tp": 9,
+    "fp": 1,
+    "fn": 186,
+    "tn": 1426,
+    "flags": 10,
+    "flag_rate": 0.006165228113440197,
+    "precision": 0.9,
+    "recall": 0.046153846153846156,
+    "fnr": 0.9538461538461539,
+    "fpr": 0.000700770847932726,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "amber",
+    "worst_level": "amber"
+   },
+   {
+    "group": "Other (VA, workers' comp, auto)",
+    "n": 443,
+    "positives": 94,
+    "negatives": 349,
+    "prevalence": 0.21218961625282168,
+    "auc": 0.835883679814668,
+    "average_precision": 0.6315326759002583,
+    "brier": 0.11861522784970358,
+    "mean_predicted": 0.23381816116028123,
+    "calibration_gap_pts": 2.1628544907459553,
+    "tp": 21,
+    "fp": 6,
+    "fn": 73,
+    "tn": 343,
+    "flags": 27,
+    "flag_rate": 0.060948081264108354,
+    "precision": 0.7777777777777778,
+    "recall": 0.22340425531914893,
+    "fnr": 0.776595744680851,
+    "fpr": 0.017191977077363897,
+    "auc_level": "ok",
+    "calibration_level": "amber",
+    "fnr_level": "ok",
+    "worst_level": "amber"
+   }
+  ],
+  "test_with_payer": {
+   "n": 20686,
+   "positives": 3492,
+   "negatives": 17194,
+   "prevalence": 0.16880982306874215,
+   "auc": 0.8566901984109377,
+   "average_precision": 0.5568114143422925,
+   "brier": 0.10185731722689474,
+   "mean_predicted": 0.17075685644256614,
+   "calibration_gap_pts": 0.19470333738239864
+  },
+  "likely_unit_accuracy_test": 0.6907216494845361
+ },
+ "discharge": {
+  "prediction_time": "07:00 rounds",
+  "features": [
+   "los_so_far_h",
+   "mobility_score",
+   "lab_trend",
+   "note_placement",
+   "note_home_care",
+   "note_insurance_auth",
+   "note_family_pickup",
+   "note_transport",
+   "note_meds_equipment",
+   "unit",
+   "dx_group",
+   "source",
+   "rounds_dow"
+  ],
+  "chosen": "boosting",
+  "selection": {
+   "logistic": {
+    "n": 8707,
+    "positives": 1903,
+    "negatives": 6804,
+    "prevalence": 0.21855977948776847,
+    "auc": 0.8413003478835207,
+    "average_precision": 0.5793136455524633,
+    "brier": 0.12453548638745679,
+    "mean_predicted": 0.22231560860838334,
+    "calibration_gap_pts": 0.37558291206148675
+   },
+   "boosting": {
+    "n": 8707,
+    "positives": 1903,
+    "negatives": 6804,
+    "prevalence": 0.21855977948776847,
+    "auc": 0.8621585305914143,
+    "average_precision": 0.6337534984548175,
+    "brier": 0.11770842731520376,
+    "mean_predicted": 0.22240356349650017,
+    "calibration_gap_pts": 0.3843784008731699
+   }
+  },
+  "test": {
+   "logistic": {
+    "n": 27279,
+    "positives": 5977,
+    "negatives": 21302,
+    "prevalence": 0.21910627222405513,
+    "auc": 0.8268529425389257,
+    "average_precision": 0.5359507316530471,
+    "brier": 0.13052992670642483,
+    "mean_predicted": 0.215908179204409,
+    "calibration_gap_pts": -0.3198093019646131
+   },
+   "boosting": {
+    "n": 27279,
+    "positives": 5977,
+    "negatives": 21302,
+    "prevalence": 0.21910627222405513,
+    "auc": 0.8527720068041001,
+    "average_precision": 0.599562521395501,
+    "brier": 0.12205506255340091,
+    "mean_predicted": 0.21529989946184844,
+    "calibration_gap_pts": -0.3806372762206689
+   }
+  },
+  "train_rows": 79375,
+  "test_rows": 27279,
+  "calibration_bins": [
+   {
+    "bin_low": 0.0,
+    "bin_high": 0.1,
+    "mean_predicted": 0.02795277093434541,
+    "observed": 0.029814469739933566,
+    "count": 12343
+   },
+   {
+    "bin_low": 0.1,
+    "bin_high": 0.2,
+    "mean_predicted": 0.14763281385802546,
+    "observed": 0.1665725578769057,
+    "count": 3542
+   },
+   {
+    "bin_low": 0.2,
+    "bin_high": 0.30000000000000004,
+    "mean_predicted": 0.24957427229564982,
+    "observed": 0.26434426229508196,
+    "count": 2928
+   },
+   {
+    "bin_low": 0.30000000000000004,
+    "bin_high": 0.4,
+    "mean_predicted": 0.34955371838653776,
+    "observed": 0.35126942023493746,
+    "count": 2639
+   },
+   {
+    "bin_low": 0.4,
+    "bin_high": 0.5,
+    "mean_predicted": 0.44835553795859806,
+    "observed": 0.44638276038994357,
+    "count": 1949
+   },
+   {
+    "bin_low": 0.5,
+    "bin_high": 0.6000000000000001,
+    "mean_predicted": 0.5484099041824906,
+    "observed": 0.5262206148282098,
+    "count": 1659
+   },
+   {
+    "bin_low": 0.6000000000000001,
+    "bin_high": 0.7000000000000001,
+    "mean_predicted": 0.6470032424231296,
+    "observed": 0.6486254295532646,
+    "count": 1164
+   },
+   {
+    "bin_low": 0.7000000000000001,
+    "bin_high": 0.8,
+    "mean_predicted": 0.7430419950237703,
+    "observed": 0.7418918918918919,
+    "count": 740
+   },
+   {
+    "bin_low": 0.8,
+    "bin_high": 0.9,
+    "mean_predicted": 0.835748850603715,
+    "observed": 0.8606271777003485,
+    "count": 287
+   },
+   {
+    "bin_low": 0.9,
+    "bin_high": 1.0,
+    "mean_predicted": 0.9115714945299451,
+    "observed": 0.8571428571428571,
+    "count": 28
+   }
+  ],
+  "roc": [
+   {
+    "fpr": 0.0,
+    "tpr": 0.0
+   },
+   {
+    "fpr": 0.002534973241949113,
+    "tpr": 0.05454241258156266
+   },
+   {
+    "fpr": 0.006337433104872782,
+    "tpr": 0.09034632758909152
+   },
+   {
+    "fpr": 0.010139892967796452,
+    "tpr": 0.12865986280742847
+   },
+   {
+    "fpr": 0.014177072575345038,
+    "tpr": 0.160950309519826
+   },
+   {
+    "fpr": 0.018448971927518543,
+    "tpr": 0.1908984440354693
+   },
+   {
+    "fpr": 0.022580039432917098,
+    "tpr": 0.2183369583403045
+   },
+   {
+    "fpr": 0.027180546427565486,
+    "tpr": 0.24343316044838548
+   },
+   {
+    "fpr": 0.03154633367758896,
+    "tpr": 0.27287937092186715
+   },
+   {
+    "fpr": 0.03619378462116233,
+    "tpr": 0.296804416931571
+   },
+   {
+    "fpr": 0.04154539479861046,
+    "tpr": 0.3193909988288439
+   },
+   {
+    "fpr": 0.045864238099708944,
+    "tpr": 0.34314873682449387
+   },
+   {
+    "fpr": 0.05196695145995681,
+    "tpr": 0.3625564664547432
+   },
+   {
+    "fpr": 0.058022720871279694,
+    "tpr": 0.3791199598460766
+   },
+   {
+    "fpr": 0.06356210684442776,
+    "tpr": 0.39785845742011045
+   },
+   {
+    "fpr": 0.06985259600037555,
+    "tpr": 0.41960849924711396
+   },
+   {
+    "fpr": 0.07581447751384847,
+    "tpr": 0.439350844905471
+   },
+   {
+    "fpr": 0.08210496666979626,
+    "tpr": 0.46076627070436676
+   },
+   {
+    "fpr": 0.08867711951929397,
+    "tpr": 0.47950476827840055
+   },
+   {
+    "fpr": 0.09454511313491691,
+    "tpr": 0.5005855780491886
+   },
+   {
+    "fpr": 0.10135198572903953,
+    "tpr": 0.5181529195248452
+   },
+   {
+    "fpr": 0.10872218571026195,
+    "tpr": 0.5375606491550945
+   },
+   {
+    "fpr": 0.11651488123180923,
+    "tpr": 0.5522837543918354
+   },
+   {
+    "fpr": 0.12365036146840672,
+    "tpr": 0.5670068596285762
+   },
+   {
+    "fpr": 0.13036334616467937,
+    "tpr": 0.5855780491885562
+   },
+   {
+    "fpr": 0.13810909773730165,
+    "tpr": 0.6004684624393508
+   },
+   {
+    "fpr": 0.1459487372077739,
+    "tpr": 0.6163627237744688
+   },
+   {
+    "fpr": 0.15388226457609613,
+    "tpr": 0.6307512129831019
+   },
+   {
+    "fpr": 0.1614402403530185,
+    "tpr": 0.6483185544587585
+   },
+   {
+    "fpr": 0.16805933715144117,
+    "tpr": 0.663543583737661
+   },
+   {
+    "fpr": 0.17561731292836352,
+    "tpr": 0.6784339969884557
+   },
+   {
+    "fpr": 0.1850999906112102,
+    "tpr": 0.6919859461268195
+   },
+   {
+    "fpr": 0.19495821988545675,
+    "tpr": 0.7055378952651832
+   },
+   {
+    "fpr": 0.2040184020279786,
+    "tpr": 0.7210975405721934
+   },
+   {
+    "fpr": 0.2122805370387757,
+    "tpr": 0.7363225698510959
+   },
+   {
+    "fpr": 0.22242043000657216,
+    "tpr": 0.7508783670737829
+   },
+   {
+    "fpr": 0.2328889306168435,
+    "tpr": 0.766438012380793
+   },
+   {
+    "fpr": 0.24246549619754013,
+    "tpr": 0.7814957336456416
+   },
+   {
+    "fpr": 0.25298094075673644,
+    "tpr": 0.7935419106575204
+   },
+   {
+    "fpr": 0.2655619190686321,
+    "tpr": 0.8080977078802075
+   },
+   {
+    "fpr": 0.27701624260632807,
+    "tpr": 0.820645808934248
+   },
+   {
+    "fpr": 0.2900666604074735,
+    "tpr": 0.8318554458758575
+   },
+   {
+    "fpr": 0.30368040559571874,
+    "tpr": 0.8439016228877363
+   },
+   {
+    "fpr": 0.31579194441836445,
+    "tpr": 0.8561151079136691
+   },
+   {
+    "fpr": 0.33039151253403437,
+    "tpr": 0.8681612849255479
+   },
+   {
+    "fpr": 0.3440522016712046,
+    "tpr": 0.8790363058390497
+   },
+   {
+    "fpr": 0.360013144305699,
+    "tpr": 0.8914170988790363
+   },
+   {
+    "fpr": 0.37611491878696834,
+    "tpr": 0.9032959678768613
+   },
+   {
+    "fpr": 0.3948924983569618,
+    "tpr": 0.9148402208465786
+   },
+   {
+    "fpr": 0.4160172753732044,
+    "tpr": 0.9265517818303497
+   },
+   {
+    "fpr": 0.4380809313679467,
+    "tpr": 0.9385979588422285
+   },
+   {
+    "fpr": 0.4615059618815135,
+    "tpr": 0.949974903797892
+   },
+   {
+    "fpr": 0.4906581541639283,
+    "tpr": 0.9618537727957169
+   },
+   {
+    "fpr": 0.5318279973711388,
+    "tpr": 0.9717249456248954
+   },
+   {
+    "fpr": 0.5808374800488217,
+    "tpr": 0.9822653505102894
+   },
+   {
+    "fpr": 0.6392357525115012,
+    "tpr": 0.992136523339468
+   },
+   {
+    "fpr": 0.7379119331518167,
+    "tpr": 0.9978249958172997
+   },
+   {
+    "fpr": 0.8317528870528589,
+    "tpr": 0.9996653839718923
+   },
+   {
+    "fpr": 0.9262041122899258,
+    "tpr": 1.0
+   },
+   {
+    "fpr": 0.9583137733546145,
+    "tpr": 1.0
+   },
+   {
+    "fpr": 0.9875598535348794,
+    "tpr": 1.0
+   },
+   {
+    "fpr": 1.0,
+    "tpr": 1.0
+   }
+  ],
+  "pr": [
+   {
+    "recall": 1.0,
+    "precision": 0.21910627222405513
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.22367337774118703
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.22823430578891096
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.23338539632955876
+   },
+   {
+    "recall": 1.0,
+    "precision": 0.23764462645620452
+   },
+   {
+    "recall": 0.9998326919859462,
+    "precision": 0.24192373087199417
+   },
+   {
+    "recall": 0.9996653839718923,
+    "precision": 0.24636127489382756
+   },
+   {
+    "recall": 0.9996653839718923,
+    "precision": 0.25111372614944943
+   },
+   {
+    "recall": 0.9994980759578384,
+    "precision": 0.255955441302485
+   },
+   {
+    "recall": 0.9991634599297307,
+    "precision": 0.260968362174445
+   },
+   {
+    "recall": 0.9984942278735152,
+    "precision": 0.26608408756520574
+   },
+   {
+    "recall": 0.9981596118454074,
+    "precision": 0.2715150411869112
+   },
+   {
+    "recall": 0.9976576878032458,
+    "precision": 0.27716835548944874
+   },
+   {
+    "recall": 0.9969884557470303,
+    "precision": 0.28285944842644895
+   },
+   {
+    "recall": 0.9954826836205454,
+    "precision": 0.28862478777589134
+   },
+   {
+    "recall": 0.9939769114940605,
+    "precision": 0.2944879547932983
+   },
+   {
+    "recall": 0.9928057553956835,
+    "precision": 0.3007297790391243
+   },
+   {
+    "recall": 0.990798059227037,
+    "precision": 0.3069825307138044
+   },
+   {
+    "recall": 0.9871172829178517,
+    "precision": 0.3130305602716469
+   },
+   {
+    "recall": 0.9836038146227204,
+    "precision": 0.3194067152015647
+   },
+   {
+    "recall": 0.9799230383135352,
+    "precision": 0.32598653086213614
+   },
+   {
+    "recall": 0.9755730299481346,
+    "precision": 0.3326867119301649
+   },
+   {
+    "recall": 0.9712230215827338,
+    "precision": 0.3397120786516854
+   },
+   {
+    "recall": 0.9668730132173331,
+    "precision": 0.34719134875337937
+   },
+   {
+    "recall": 0.9618537727957169,
+    "precision": 0.3547889410022217
+   },
+   {
+    "recall": 0.955161452233562,
+    "precision": 0.3621772505233775
+   },
+   {
+    "recall": 0.9452902794043835,
+    "precision": 0.368750815820389
+   },
+   {
+    "recall": 0.9372594947297975,
+    "precision": 0.3764278994758769
+   },
+   {
+    "recall": 0.9278902459427807,
+    "precision": 0.3840720221606648
+   },
+   {
+    "recall": 0.9176844570854944,
+    "precision": 0.3917857142857143
+   },
+   {
+    "recall": 0.9069767441860465,
+    "precision": 0.39995573262505535
+   },
+   {
+    "recall": 0.894428643132006,
+    "precision": 0.4077181208053691
+   },
+   {
+    "recall": 0.8820478500920194,
+    "precision": 0.41603535353535354
+   },
+   {
+    "recall": 0.8681612849255479,
+    "precision": 0.42435394177298
+   },
+   {
+    "recall": 0.8542747197590764,
+    "precision": 0.43322586119124384
+   },
+   {
+    "recall": 0.8375439183536891,
+    "precision": 0.44144620811287477
+   },
+   {
+    "recall": 0.8239919692153254,
+    "precision": 0.4521252180299275
+   },
+   {
+    "recall": 0.8069265517818304,
+    "precision": 0.4614869390488948
+   },
+   {
+    "recall": 0.7878534381796888,
+    "precision": 0.4705235811350919
+   },
+   {
+    "recall": 0.7681110925213318,
+    "precision": 0.47982859531772576
+   },
+   {
+    "recall": 0.7463610506943282,
+    "precision": 0.4890911084310931
+   },
+   {
+    "recall": 0.7227706207127321,
+    "precision": 0.49781055542751784
+   },
+   {
+    "recall": 0.6996821147732977,
+    "precision": 0.5078940976439155
+   },
+   {
+    "recall": 0.6777647649322402,
+    "precision": 0.5200924380536655
+   },
+   {
+    "recall": 0.650326250627405,
+    "precision": 0.5294197766276219
+   },
+   {
+    "recall": 0.6207127321398695,
+    "precision": 0.5383052814857806
+   },
+   {
+    "recall": 0.5959511460598963,
+    "precision": 0.5528480521496197
+   },
+   {
+    "recall": 0.5648318554458759,
+    "precision": 0.5633238778575004
+   },
+   {
+    "recall": 0.538397189225364,
+    "precision": 0.5804473304473304
+   },
+   {
+    "recall": 0.5074452066253974,
+    "precision": 0.5955232672295308
+   },
+   {
+    "recall": 0.4716412916178685,
+    "precision": 0.6067585019371502
+   },
+   {
+    "recall": 0.43433160448385477,
+    "precision": 0.6195704057279237
+   },
+   {
+    "recall": 0.39836038146227204,
+    "precision": 0.6371420925876371
+   },
+   {
+    "recall": 0.36339300652501255,
+    "precision": 0.6603830951657038
+   },
+   {
+    "recall": 0.32424293123640624,
+    "precision": 0.6833568406205924
+   },
+   {
+    "recall": 0.27923707545591436,
+    "precision": 0.7015552753257671
+   },
+   {
+    "recall": 0.23306006357704534,
+    "precision": 0.7247658688865765
+   },
+   {
+    "recall": 0.1828676593608834,
+    "precision": 0.747095010252905
+   },
+   {
+    "recall": 0.13116948301823658,
+    "precision": 0.7808764940239044
+   },
+   {
+    "recall": 0.07395014221181194,
+    "precision": 0.8246268656716418
+   },
+   {
+    "recall": 0.008365400702693659,
+    "precision": 0.9090909090909091
+   },
+   {
+    "recall": 0.0,
+    "precision": 1.0
+   }
+  ],
+  "at_threshold": {
+   "n": 27279,
+   "positives": 5977,
+   "negatives": 21302,
+   "prevalence": 0.21910627222405513,
+   "auc": 0.8527720068041001,
+   "average_precision": 0.599562521395501,
+   "brier": 0.12205506255340091,
+   "mean_predicted": 0.21529989946184844,
+   "calibration_gap_pts": -0.3806372762206689,
+   "tp": 2448,
+   "fp": 1430,
+   "fn": 3529,
+   "tn": 19872,
+   "flags": 3878,
+   "flag_rate": 0.14216063638696433,
+   "precision": 0.631253223310985,
+   "recall": 0.4095700184038815,
+   "fnr": 0.5904299815961185,
+   "fpr": 0.0671298469627265
+  },
+  "lead_time": {
+   "definition": "true_positive_rounds: Rounds rows flagged (chance at or above the list threshold) and followed by a departure within 24 hours. Lead = hours from that 07:00 rounds to departure. missed_positive_rounds: Rounds rows not flagged but followed by a departure within 24 hours. Hours from that rounds to departure = warning time the list did not give. eligible_positive_stays: Stays that left before the end of the test window and had at least one rounds row within 24 hours of leaving. Flagged in time = at least one of those rows was flagged; missed = none was. all_flags_diagnostic: Stays that left before the end of the test window and were flagged at least once. Hours from the first flag at any rounds to departure; can exceed 24 hours.",
+   "cohorts": {
+    "true_positive_rounds": "Rounds rows flagged (chance at or above the list threshold) and followed by a departure within 24 hours. Lead = hours from that 07:00 rounds to departure.",
+    "missed_positive_rounds": "Rounds rows not flagged but followed by a departure within 24 hours. Hours from that rounds to departure = warning time the list did not give.",
+    "eligible_positive_stays": "Stays that left before the end of the test window and had at least one rounds row within 24 hours of leaving. Flagged in time = at least one of those rows was flagged; missed = none was.",
+    "all_flags_diagnostic": "Stays that left before the end of the test window and were flagged at least once. Hours from the first flag at any rounds to departure; can exceed 24 hours."
+   },
+   "true_positive_rounds": 2448,
+   "median_h_true_positive": 6.765218891119972,
+   "missed_positive_rounds": 3529,
+   "median_h_missed_positive": 6.789238402872191,
+   "eligible_positive_stays": 5977,
+   "stays_flagged_in_time": 2448,
+   "stays_missed": 3529,
+   "share_flagged_in_time": 0.4095700184038815,
+   "all_flags_median_h": 8.022053749641053,
+   "all_flags_share_over_24h": 0.36461967899511516,
+   "all_flags_stays": 2866
+  },
+  "importance": {
+   "logistic": [
+    {
+     "feature": "lab_trend",
+     "mean_abs_contribution": 0.8036715361009462,
+     "permutation_auc_drop": 0.16487739771193244,
+     "label": "Lab trend"
+    },
+    {
+     "feature": "mobility_score",
+     "mean_abs_contribution": 0.4212389051326797,
+     "permutation_auc_drop": 0.031552283239431156,
+     "label": "Mobility score"
+    },
+    {
+     "feature": "los_so_far_h",
+     "mean_abs_contribution": 0.28987025960381013,
+     "permutation_auc_drop": 0.026722390980281025,
+     "label": "Time in hospital so far"
+    },
+    {
+     "feature": "rounds_dow",
+     "mean_abs_contribution": 0.3072351843110283,
+     "permutation_auc_drop": 0.020337909938225634,
+     "label": "Day of the week"
+    },
+    {
+     "feature": "note_placement",
+     "mean_abs_contribution": 0.15717521695632491,
+     "permutation_auc_drop": 0.018359372203626673,
+     "label": "Note: rehab or nursing-facility placement"
+    },
+    {
+     "feature": "note_home_care",
+     "mean_abs_contribution": 0.1047636476463018,
+     "permutation_auc_drop": 0.009691971413446613,
+     "label": "Note: home care set-up"
+    },
+    {
+     "feature": "note_insurance_auth",
+     "mean_abs_contribution": 0.0684144436529118,
+     "permutation_auc_drop": 0.0053814412111277505,
+     "label": "Note: insurance authorization"
+    },
+    {
+     "feature": "note_meds_equipment",
+     "mean_abs_contribution": 0.03640912543734835,
+     "permutation_auc_drop": 0.003691492599227223,
+     "label": "Note: pending medications or equipment"
+    },
+    {
+     "feature": "note_transport",
+     "mean_abs_contribution": 0.03987037495094299,
+     "permutation_auc_drop": 0.002769220562912141,
+     "label": "Note: transport"
+    },
+    {
+     "feature": "source",
+     "mean_abs_contribution": 0.10661850906247135,
+     "permutation_auc_drop": 0.002046791439247612,
+     "label": "Admission source"
+    },
+    {
+     "feature": "unit",
+     "mean_abs_contribution": 0.1556353601145951,
+     "permutation_auc_drop": 0.0017011511815185527,
+     "label": "Unit"
+    },
+    {
+     "feature": "note_family_pickup",
+     "mean_abs_contribution": 0.03662930388801153,
+     "permutation_auc_drop": 0.0016363402177767365,
+     "label": "Note: family pickup"
+    },
+    {
+     "feature": "dx_group",
+     "mean_abs_contribution": 0.04265635701094959,
+     "permutation_auc_drop": 7.322655262450202e-06,
+     "label": "Diagnosis group"
+    }
+   ],
+   "boosting": [
+    {
+     "feature": "lab_trend",
+     "mean_abs_contribution": 0.7144450368984478,
+     "permutation_auc_drop": 0.12461946100557653,
+     "label": "Lab trend"
+    },
+    {
+     "feature": "los_so_far_h",
+     "mean_abs_contribution": 0.999908860205791,
+     "permutation_auc_drop": 0.09812901786307104,
+     "label": "Time in hospital so far"
+    },
+    {
+     "feature": "rounds_dow",
+     "mean_abs_contribution": 0.3502285900663643,
+     "permutation_auc_drop": 0.021984004588572487,
+     "label": "Day of the week"
+    },
+    {
+     "feature": "mobility_score",
+     "mean_abs_contribution": 0.33152868824342324,
+     "permutation_auc_drop": 0.020672839446466324,
+     "label": "Mobility score"
+    },
+    {
+     "feature": "note_placement",
+     "mean_abs_contribution": 0.06572882413972105,
+     "permutation_auc_drop": 0.016845631814816835,
+     "label": "Note: rehab or nursing-facility placement"
+    },
+    {
+     "feature": "note_home_care",
+     "mean_abs_contribution": 0.045588001886924134,
+     "permutation_auc_drop": 0.011049613557797877,
+     "label": "Note: home care set-up"
+    },
+    {
+     "feature": "dx_group",
+     "mean_abs_contribution": 0.1431497847227619,
+     "permutation_auc_drop": 0.006712361128438575,
+     "label": "Diagnosis group"
+    },
+    {
+     "feature": "note_insurance_auth",
+     "mean_abs_contribution": 0.02446956572244333,
+     "permutation_auc_drop": 0.005595300997471335,
+     "label": "Note: insurance authorization"
+    },
+    {
+     "feature": "note_meds_equipment",
+     "mean_abs_contribution": 0.015688961211753085,
+     "permutation_auc_drop": 0.004110468702944107,
+     "label": "Note: pending medications or equipment"
+    },
+    {
+     "feature": "note_transport",
+     "mean_abs_contribution": 0.015620560168243609,
+     "permutation_auc_drop": 0.002597629984371593,
+     "label": "Note: transport"
+    },
+    {
+     "feature": "note_family_pickup",
+     "mean_abs_contribution": 0.012656563379507163,
+     "permutation_auc_drop": 0.0022141742233463915,
+     "label": "Note: family pickup"
+    },
+    {
+     "feature": "unit",
+     "mean_abs_contribution": 0.128951944942497,
+     "permutation_auc_drop": 0.0015977869842862535,
+     "label": "Unit"
+    },
+    {
+     "feature": "source",
+     "mean_abs_contribution": 0.02506117241380388,
+     "permutation_auc_drop": 0.0002879333625255276,
+     "label": "Admission source"
+    }
+   ]
+  },
+  "fairness": [
+   {
+    "group": "All patients",
+    "n": 27279,
+    "positives": 5977,
+    "negatives": 21302,
+    "prevalence": 0.21910627222405513,
+    "auc": 0.8527720068041001,
+    "average_precision": 0.599562521395501,
+    "brier": 0.12205506255340091,
+    "mean_predicted": 0.21529989946184844,
+    "calibration_gap_pts": -0.3806372762206689,
+    "tp": 2448,
+    "fp": 1430,
+    "fn": 3529,
+    "tn": 19872,
+    "flags": 3878,
+    "flag_rate": 0.14216063638696433,
+    "precision": 0.631253223310985,
+    "recall": 0.4095700184038815,
+    "fnr": 0.5904299815961185,
+    "fpr": 0.0671298469627265,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicaid/CHIP",
+    "n": 5750,
+    "positives": 1287,
+    "negatives": 4463,
+    "prevalence": 0.22382608695652173,
+    "auc": 0.8477510240898096,
+    "average_precision": 0.5945582624856551,
+    "brier": 0.12538822108939304,
+    "mean_predicted": 0.23095821868564909,
+    "calibration_gap_pts": 0.7132131729127356,
+    "tp": 553,
+    "fp": 350,
+    "fn": 734,
+    "tn": 4113,
+    "flags": 903,
+    "flag_rate": 0.15704347826086956,
+    "precision": 0.6124031007751938,
+    "recall": 0.4296814296814297,
+    "fnr": 0.5703185703185704,
+    "fpr": 0.07842258570468295,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicare",
+    "n": 10553,
+    "positives": 2297,
+    "negatives": 8256,
+    "prevalence": 0.2176632237278499,
+    "auc": 0.862068203639395,
+    "average_precision": 0.607237562832773,
+    "brier": 0.11928940285943666,
+    "mean_predicted": 0.1970614081588587,
+    "calibration_gap_pts": -2.060181556899121,
+    "tp": 862,
+    "fp": 451,
+    "fn": 1435,
+    "tn": 7805,
+    "flags": 1313,
+    "flag_rate": 0.12441959632332038,
+    "precision": 0.6565118050266565,
+    "recall": 0.3752720940356987,
+    "fnr": 0.6247279059643013,
+    "fpr": 0.054626937984496124,
+    "auc_level": "ok",
+    "calibration_level": "amber",
+    "fnr_level": "ok",
+    "worst_level": "amber"
+   },
+   {
+    "group": "Commercial",
+    "n": 8924,
+    "positives": 1965,
+    "negatives": 6959,
+    "prevalence": 0.2201927386822053,
+    "auc": 0.8462459326473086,
+    "average_precision": 0.6023262958248587,
+    "brier": 0.12408800276469115,
+    "mean_predicted": 0.22724622374262093,
+    "calibration_gap_pts": 0.7053485060415643,
+    "tp": 857,
+    "fp": 517,
+    "fn": 1108,
+    "tn": 6442,
+    "flags": 1374,
+    "flag_rate": 0.15396683101748096,
+    "precision": 0.62372634643377,
+    "recall": 0.4361323155216285,
+    "fnr": 0.5638676844783715,
+    "fpr": 0.074292283374048,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Uninsured",
+    "n": 1372,
+    "positives": 291,
+    "negatives": 1081,
+    "prevalence": 0.21209912536443148,
+    "auc": 0.8543254146122815,
+    "average_precision": 0.5888922672565259,
+    "brier": 0.11993220950627058,
+    "mean_predicted": 0.21941247425033042,
+    "calibration_gap_pts": 0.7313348885898935,
+    "tp": 124,
+    "fp": 82,
+    "fn": 167,
+    "tn": 999,
+    "flags": 206,
+    "flag_rate": 0.15014577259475217,
+    "precision": 0.6019417475728155,
+    "recall": 0.4261168384879725,
+    "fnr": 0.5738831615120275,
+    "fpr": 0.07585568917668825,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Other (VA, workers' comp, auto)",
+    "n": 680,
+    "positives": 137,
+    "negatives": 543,
+    "prevalence": 0.20147058823529412,
+    "auc": 0.8598217526313666,
+    "average_precision": 0.6007899184480421,
+    "brier": 0.11439468182333964,
+    "mean_predicted": 0.20086462400918212,
+    "calibration_gap_pts": -0.06059642261120046,
+    "tp": 52,
+    "fp": 30,
+    "fn": 85,
+    "tn": 513,
+    "flags": 82,
+    "flag_rate": 0.12058823529411765,
+    "precision": 0.6341463414634146,
+    "recall": 0.3795620437956204,
+    "fnr": 0.6204379562043796,
+    "fpr": 0.055248618784530384,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   }
+  ],
+  "fairness_with_payer": [
+   {
+    "group": "All patients",
+    "n": 27279,
+    "positives": 5977,
+    "negatives": 21302,
+    "prevalence": 0.21910627222405513,
+    "auc": 0.8536658817960947,
+    "average_precision": 0.6019693425036959,
+    "brier": 0.12168677448675014,
+    "mean_predicted": 0.21583125049888965,
+    "calibration_gap_pts": -0.32750217251654723,
+    "tp": 2482,
+    "fp": 1409,
+    "fn": 3495,
+    "tn": 19893,
+    "flags": 3891,
+    "flag_rate": 0.14263719344550754,
+    "precision": 0.6378822924698021,
+    "recall": 0.41525849088171324,
+    "fnr": 0.5847415091182868,
+    "fpr": 0.06614402403530185,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicaid/CHIP",
+    "n": 5750,
+    "positives": 1287,
+    "negatives": 4463,
+    "prevalence": 0.22382608695652173,
+    "auc": 0.8475237387404092,
+    "average_precision": 0.595400952248515,
+    "brier": 0.12531480695061056,
+    "mean_predicted": 0.21908806328761365,
+    "calibration_gap_pts": -0.47380236689080757,
+    "tp": 504,
+    "fp": 289,
+    "fn": 783,
+    "tn": 4174,
+    "flags": 793,
+    "flag_rate": 0.13791304347826086,
+    "precision": 0.6355611601513241,
+    "recall": 0.3916083916083916,
+    "fnr": 0.6083916083916084,
+    "fpr": 0.06475464933900964,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Medicare",
+    "n": 10553,
+    "positives": 2297,
+    "negatives": 8256,
+    "prevalence": 0.2176632237278499,
+    "auc": 0.862217433507811,
+    "average_precision": 0.6069121927764513,
+    "brier": 0.1186427167208299,
+    "mean_predicted": 0.21142025879976747,
+    "calibration_gap_pts": -0.6242964928082434,
+    "tp": 982,
+    "fp": 536,
+    "fn": 1315,
+    "tn": 7720,
+    "flags": 1518,
+    "flag_rate": 0.14384535203259738,
+    "precision": 0.6469038208168643,
+    "recall": 0.42751414888985634,
+    "fnr": 0.5724858511101437,
+    "fpr": 0.06492248062015504,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Commercial",
+    "n": 8924,
+    "positives": 1965,
+    "negatives": 6959,
+    "prevalence": 0.2201927386822053,
+    "auc": 0.8465125615793267,
+    "average_precision": 0.6028419088462775,
+    "brier": 0.12379449270567165,
+    "mean_predicted": 0.21920733526811836,
+    "calibration_gap_pts": -0.09854034140869272,
+    "tp": 812,
+    "fp": 465,
+    "fn": 1153,
+    "tn": 6494,
+    "flags": 1277,
+    "flag_rate": 0.14309726580008963,
+    "precision": 0.6358653093187158,
+    "recall": 0.41323155216284985,
+    "fnr": 0.5867684478371501,
+    "fpr": 0.06681994539445323,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Uninsured",
+    "n": 1372,
+    "positives": 291,
+    "negatives": 1081,
+    "prevalence": 0.21209912536443148,
+    "auc": 0.855921238766447,
+    "average_precision": 0.5939970394480916,
+    "brier": 0.11965968731144778,
+    "mean_predicted": 0.22471095545262618,
+    "calibration_gap_pts": 1.261183008819469,
+    "tp": 133,
+    "fp": 92,
+    "fn": 158,
+    "tn": 989,
+    "flags": 225,
+    "flag_rate": 0.16399416909620992,
+    "precision": 0.5911111111111111,
+    "recall": 0.4570446735395189,
+    "fnr": 0.5429553264604811,
+    "fpr": 0.0851063829787234,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   },
+   {
+    "group": "Other (VA, workers' comp, auto)",
+    "n": 680,
+    "positives": 137,
+    "negatives": 543,
+    "prevalence": 0.20147058823529412,
+    "auc": 0.859539460418599,
+    "average_precision": 0.6082399782483164,
+    "brier": 0.1146788938329539,
+    "mean_predicted": 0.1945244654820519,
+    "calibration_gap_pts": -0.6946122753242218,
+    "tp": 51,
+    "fp": 27,
+    "fn": 86,
+    "tn": 516,
+    "flags": 78,
+    "flag_rate": 0.11470588235294117,
+    "precision": 0.6538461538461539,
+    "recall": 0.3722627737226277,
+    "fnr": 0.6277372262773723,
+    "fpr": 0.049723756906077346,
+    "auc_level": "ok",
+    "calibration_level": "ok",
+    "fnr_level": "ok",
+    "worst_level": "ok"
+   }
+  ],
+  "test_with_payer": {
+   "n": 27279,
+   "positives": 5977,
+   "negatives": 21302,
+   "prevalence": 0.21910627222405513,
+   "auc": 0.8536658817960947,
+   "average_precision": 0.6019693425036959,
+   "brier": 0.12168677448675014,
+   "mean_predicted": 0.21583125049888965,
+   "calibration_gap_pts": -0.32750217251654723
+  }
+ },
+ "forecast": {
+  "backtest": [
+   {
+    "horizon_h": 4,
+    "forecasts": 1092,
+    "mae": 1.15908197445217,
+    "mae_persistence": 2.5595238095238093,
+    "coverage80": 0.8067765567765568
+   },
+   {
+    "horizon_h": 8,
+    "forecasts": 1092,
+    "mae": 2.040876486131911,
+    "mae_persistence": 3.02014652014652,
+    "coverage80": 0.7838827838827839
+   },
+   {
+    "horizon_h": 24,
+    "forecasts": 1092,
+    "mae": 3.4104496233303094,
+    "mae_persistence": 3.6437728937728937,
+    "coverage80": 0.7472527472527473
+   }
+  ],
+  "backtest_by_unit": [
+   {
+    "unit": "ICU",
+    "horizon_h": 4,
+    "abs_err": 0.589802637004002
+   },
+   {
+    "unit": "ICU",
+    "horizon_h": 8,
+    "abs_err": 1.2064077080938955
+   },
+   {
+    "unit": "ICU",
+    "horizon_h": 24,
+    "abs_err": 2.004119335686047
+   },
+   {
+    "unit": "Medicine A",
+    "horizon_h": 4,
+    "abs_err": 1.46248173911957
+   },
+   {
+    "unit": "Medicine A",
+    "horizon_h": 8,
+    "abs_err": 2.8107329364027254
+   },
+   {
+    "unit": "Medicine A",
+    "horizon_h": 24,
+    "abs_err": 4.320104707097023
+   },
+   {
+    "unit": "Medicine B",
+    "horizon_h": 4,
+    "abs_err": 1.4152034325422864
+   },
+   {
+    "unit": "Medicine B",
+    "horizon_h": 8,
+    "abs_err": 2.4214224474151056
+   },
+   {
+    "unit": "Medicine B",
+    "horizon_h": 24,
+    "abs_err": 4.080855690884511
+   },
+   {
+    "unit": "Step-down",
+    "horizon_h": 4,
+    "abs_err": 0.7826886762485162
+   },
+   {
+    "unit": "Step-down",
+    "horizon_h": 8,
+    "abs_err": 1.2789694548741866
+   },
+   {
+    "unit": "Step-down",
+    "horizon_h": 24,
+    "abs_err": 1.8793497912845647
+   },
+   {
+    "unit": "Surgery",
+    "horizon_h": 4,
+    "abs_err": 1.4674860095017126
+   },
+   {
+    "unit": "Surgery",
+    "horizon_h": 8,
+    "abs_err": 2.6200839225753407
+   },
+   {
+    "unit": "Surgery",
+    "horizon_h": 24,
+    "abs_err": 5.033160795451526
+   },
+   {
+    "unit": "Telemetry",
+    "horizon_h": 4,
+    "abs_err": 1.2368293522969327
+   },
+   {
+    "unit": "Telemetry",
+    "horizon_h": 8,
+    "abs_err": 1.907642447430214
+   },
+   {
+    "unit": "Telemetry",
+    "horizon_h": 24,
+    "abs_err": 3.1451074195781863
+   }
+  ],
+  "clean_lag_min": 88.76504127796215,
+  "times": "07:00 and 15:00 on every test day"
+ }
+}

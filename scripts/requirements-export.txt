@@ -1,0 +1,2 @@
+# Install after the app requirements. A local Chrome or Chromium is required.
+kaleido==1.2.0

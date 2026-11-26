@@ -1,0 +1,2 @@
+# Browser QA only (scripts/qa_browser.py); it drives the Chrome already installed, no browser download
+playwright==1.65.2

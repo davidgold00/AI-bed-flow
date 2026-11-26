@@ -1,0 +1,12 @@
+# Pinned for reproducibility. Wheels exist for macOS arm64 on Python 3.11, 3.12 and 3.13.
+# numpy and scipy are held below their newest releases because those dropped Python 3.11.
+numpy==2.4.6
+pandas==3.1.1
+scipy==1.17.1
+scikit-learn==1.9.1
+joblib==1.6.0
+pyarrow==26.0.1
+plotly==7.1.0
+streamlit==1.67.0
+pytest==9.2.0
+ruff==0.17.6

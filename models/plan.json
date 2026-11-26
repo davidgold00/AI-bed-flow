@@ -1,0 +1,1296 @@
+{
+ "budget": {
+  "lines": [
+   {
+    "phase": "pilot",
+    "category": "Licensing",
+    "item": "Open-source stack: Python, scikit-learn, Streamlit, Ollama and Llama 3.2 3B open weights",
+    "quantity": 1,
+    "unit": "stack",
+    "rate": 0,
+    "cost": 0,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Integration",
+    "item": "Read-only EHR feeds: bed status and ADT events, triage, notes (contract engineer)",
+    "quantity": 300,
+    "unit": "h",
+    "rate": 150,
+    "cost": 45000,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Integration",
+    "item": "EHR vendor interface activation fee (least certain: needs a quote)",
+    "quantity": 1,
+    "unit": "fee",
+    "rate": 20000,
+    "cost": 20000,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Infrastructure",
+    "item": "Hospital-hosted server with a small GPU for the models and the local language model",
+    "quantity": 1,
+    "unit": "server",
+    "rate": 12000,
+    "cost": 12000,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Build and validation",
+    "item": "Data scientist, 1.0 FTE for 6 months (production build, silent-mode validation)",
+    "quantity": 1040,
+    "unit": "h",
+    "rate": 90,
+    "cost": 93600,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Build and validation",
+    "item": "Tool owner: clinical informatics nurse, 0.5 FTE",
+    "quantity": 520,
+    "unit": "h",
+    "rate": 65,
+    "cost": 33800,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Build and validation",
+    "item": "Project manager, 0.5 FTE",
+    "quantity": 520,
+    "unit": "h",
+    "rate": 55,
+    "cost": 28600,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Security review",
+    "item": "Third-party security assessment and penetration test before go-live",
+    "quantity": 1,
+    "unit": "review",
+    "rate": 25000,
+    "cost": 25000,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Security review",
+    "item": "HIPAA security risk analysis update (privacy and security office)",
+    "quantity": 60,
+    "unit": "h",
+    "rate": 75,
+    "cost": 4500,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Adoption and trust",
+    "item": "Patient and family advisory sessions, plain-language materials",
+    "quantity": 1,
+    "unit": "program",
+    "rate": 3000,
+    "cost": 3000,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "ED charge and triage nurses: 20 x 2 h",
+    "quantity": 40.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 3900.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Bed managers and house supervisors: 6 x 2 h",
+    "quantity": 12.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 1170.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Inpatient charge nurses: 8 x 2 h",
+    "quantity": 16.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 1560.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Case managers: 4 x 2 h",
+    "quantity": 8.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 780.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Hospitalists and attendings (rounds list): 8 x 1 h",
+    "quantity": 8.0,
+    "unit": "h",
+    "rate": 300.0,
+    "cost": 2400.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "ED physicians (awareness briefing): 14 x 0.5 h",
+    "quantity": 7.0,
+    "unit": "h",
+    "rate": 300.0,
+    "cost": 2100.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Advanced practice providers (awareness briefing): 10 x 0.5 h",
+    "quantity": 5.0,
+    "unit": "h",
+    "rate": 150.0,
+    "cost": 750.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Training (clinician time)",
+    "item": "Super-users, one per unit and shift (extra hours): 6 x 8 h",
+    "quantity": 48.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 4680.0,
+    "hidden": true
+   },
+   {
+    "phase": "pilot",
+    "category": "Monitoring and oversight",
+    "item": "AI oversight committee, monthly, 6 meetings",
+    "quantity": 6,
+    "unit": "meetings",
+    "rate": 547.5,
+    "cost": 3285.0,
+    "hidden": false
+   },
+   {
+    "phase": "pilot",
+    "category": "Contingency",
+    "item": "10% reserve",
+    "quantity": 1,
+    "unit": "reserve",
+    "rate": 28612.5,
+    "cost": 28612.5,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Integration",
+    "item": "Extend feeds to five more units; decision log to the quality data warehouse",
+    "quantity": 120,
+    "unit": "h",
+    "rate": 150,
+    "cost": 18000,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Integration",
+    "item": "EHR vendor interface maintenance, 12 months",
+    "quantity": 1,
+    "unit": "year",
+    "rate": 10000,
+    "cost": 10000,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Infrastructure",
+    "item": "Standby server for failover",
+    "quantity": 1,
+    "unit": "server",
+    "rate": 12000,
+    "cost": 12000,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Infrastructure",
+    "item": "Hardware support and backups, 12 months",
+    "quantity": 1,
+    "unit": "year",
+    "rate": 3000,
+    "cost": 3000,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Build and validation",
+    "item": "Data scientist, 0.5 FTE for 12 months (monitoring, retraining)",
+    "quantity": 1040,
+    "unit": "h",
+    "rate": 90,
+    "cost": 93600,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Build and validation",
+    "item": "Tool owner: clinical informatics nurse, 0.5 FTE for 12 months",
+    "quantity": 1040,
+    "unit": "h",
+    "rate": 65,
+    "cost": 67600,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Build and validation",
+    "item": "Project manager, 0.25 FTE for the 6-month rollout",
+    "quantity": 260,
+    "unit": "h",
+    "rate": 55,
+    "cost": 14300,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Security review",
+    "item": "Security re-test after expansion",
+    "quantity": 1,
+    "unit": "review",
+    "rate": 10000,
+    "cost": 10000,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Adoption and trust",
+    "item": "Unit champion huddles and patient materials",
+    "quantity": 1,
+    "unit": "program",
+    "rate": 2000,
+    "cost": 2000,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Training (clinician time)",
+    "item": "Inpatient charge nurses: 40 x 2 h",
+    "quantity": 80.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 7800.0,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Training (clinician time)",
+    "item": "Case managers: 16 x 2 h",
+    "quantity": 32.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 3120.0,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Training (clinician time)",
+    "item": "Hospitalists and attendings (rounds list): 32 x 1 h",
+    "quantity": 32.0,
+    "unit": "h",
+    "rate": 300.0,
+    "cost": 9600.0,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Training (clinician time)",
+    "item": "Super-users, one per unit and shift (extra hours): 15 x 8 h",
+    "quantity": 120.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 11700.0,
+    "hidden": true
+   },
+   {
+    "phase": "scale",
+    "category": "Monitoring and oversight",
+    "item": "AI oversight committee, monthly, 12 meetings",
+    "quantity": 12,
+    "unit": "meetings",
+    "rate": 547.5,
+    "cost": 6570.0,
+    "hidden": false
+   },
+   {
+    "phase": "scale",
+    "category": "Contingency",
+    "item": "10% reserve",
+    "quantity": 1,
+    "unit": "reserve",
+    "rate": 26929.0,
+    "cost": 26929.0,
+    "hidden": false
+   },
+   {
+    "phase": "run",
+    "category": "Integration",
+    "item": "EHR vendor interface maintenance",
+    "quantity": 1,
+    "unit": "year",
+    "rate": 10000,
+    "cost": 10000,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Infrastructure",
+    "item": "Hardware support, backups and a replacement reserve (2 servers over 5 years)",
+    "quantity": 1,
+    "unit": "year",
+    "rate": 7800.0,
+    "cost": 7800.0,
+    "hidden": false
+   },
+   {
+    "phase": "run",
+    "category": "Build and validation",
+    "item": "Data scientist, 0.5 FTE (monitoring, retraining)",
+    "quantity": 1040,
+    "unit": "h",
+    "rate": 90,
+    "cost": 93600,
+    "hidden": false
+   },
+   {
+    "phase": "run",
+    "category": "Build and validation",
+    "item": "Tool owner: clinical informatics nurse, 0.25 FTE",
+    "quantity": 520,
+    "unit": "h",
+    "rate": 65,
+    "cost": 33800,
+    "hidden": false
+   },
+   {
+    "phase": "run",
+    "category": "Security review",
+    "item": "Annual security assessment",
+    "quantity": 1,
+    "unit": "review",
+    "rate": 15000,
+    "cost": 15000,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "ED charge and triage nurses: new staff and a yearly refresher",
+    "quantity": 18.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 1755.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Bed managers and house supervisors: new staff and a yearly refresher",
+    "quantity": 5.4,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 526.5,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Inpatient charge nurses: new staff and a yearly refresher",
+    "quantity": 43.2,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 4212.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Case managers: new staff and a yearly refresher",
+    "quantity": 18.0,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 1755.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Hospitalists and attendings (rounds list): new staff and a yearly refresher",
+    "quantity": 28.0,
+    "unit": "h",
+    "rate": 300.0,
+    "cost": 8400.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "ED physicians (awareness briefing): new staff and a yearly refresher",
+    "quantity": 8.4,
+    "unit": "h",
+    "rate": 300.0,
+    "cost": 2520.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Advanced practice providers (awareness briefing): new staff and a yearly refresher",
+    "quantity": 6.0,
+    "unit": "h",
+    "rate": 150.0,
+    "cost": 900.0,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Training (clinician time)",
+    "item": "Super-users, one per unit and shift (extra hours): new staff and a yearly refresher",
+    "quantity": 44.1,
+    "unit": "h",
+    "rate": 97.5,
+    "cost": 4299.75,
+    "hidden": true
+   },
+   {
+    "phase": "run",
+    "category": "Monitoring and oversight",
+    "item": "AI oversight committee, monthly, 12 meetings",
+    "quantity": 12,
+    "unit": "meetings",
+    "rate": 547.5,
+    "cost": 6570.0,
+    "hidden": false
+   },
+   {
+    "phase": "run",
+    "category": "Contingency",
+    "item": "10% reserve",
+    "quantity": 1,
+    "unit": "reserve",
+    "rate": 19113.825,
+    "cost": 19113.825,
+    "hidden": false
+   }
+  ],
+  "phase_labels": {
+   "pilot": "Phase 1: Pilot (Months 1 to 6)",
+   "scale": "Phase 2: Scale (Months 7 to 18)",
+   "run": "Each year after Month 18"
+  },
+  "by_phase": {
+   "pilot": 314737.5,
+   "scale": 296219.0,
+   "run": 210252.075
+  },
+  "by_category": {
+   "pilot": {
+    "Adoption and trust": 3000,
+    "Build and validation": 156000,
+    "Contingency": 28612.5,
+    "Infrastructure": 12000,
+    "Integration": 65000,
+    "Licensing": 0,
+    "Monitoring and oversight": 3285.0,
+    "Security review": 29500,
+    "Training (clinician time)": 17340.0
+   },
+   "scale": {
+    "Adoption and trust": 2000,
+    "Build and validation": 175500,
+    "Contingency": 26929.0,
+    "Infrastructure": 15000,
+    "Integration": 28000,
+    "Licensing": 0,
+    "Monitoring and oversight": 6570.0,
+    "Security review": 10000,
+    "Training (clinician time)": 32220.0
+   },
+   "run": {
+    "Adoption and trust": 0,
+    "Build and validation": 127400,
+    "Contingency": 19113.825,
+    "Infrastructure": 7800.0,
+    "Integration": 10000,
+    "Licensing": 0,
+    "Monitoring and oversight": 6570.0,
+    "Security review": 15000,
+    "Training (clinician time)": 24368.25
+   }
+  },
+  "hidden_by_phase": {
+   "pilot": 66840.0,
+   "scale": 52220.0,
+   "run": 49368.25
+  },
+  "total_18_months": 610956.5,
+  "year_1": 462847.0,
+  "months_13_to_18": 148109.5,
+  "run_per_year": 210252.075,
+  "caps": {
+   "per_year": 500000,
+   "18_months": 750000
+  },
+  "within_caps": {
+   "18_months": true,
+   "year_1": true,
+   "run_per_year": true
+  },
+  "headroom_18_months": 139043.5,
+  "alternatives": [
+   {
+    "option": "Rules-only note reader (no language model, no GPU server)",
+    "saving": -12000,
+    "note": "Saves the GPU server. The rules match these synthetic notes well but are brittle on new phrasing."
+   },
+   {
+    "option": "Train-the-trainer: super-users train their own units",
+    "saving": null,
+    "note": "Cuts classroom hours; the training line already assumes it for scale."
+   },
+   {
+    "option": "Commercial patient-flow platform instead of an in-house build",
+    "saving": null,
+    "note": "Vendor pricing is not public; we would get quotes in Month 1 and compare against this budget."
+   },
+   {
+    "option": "Cloud language model API instead of a local model",
+    "saving": null,
+    "note": "Rejected: notes would leave Halvian's network and add per-call fees."
+   }
+  ]
+ },
+ "traditional": {
+  "rows": [
+   {
+    "task": "Flow nurse screening each triaged ED patient for likely admission and calling bed requests, around the clock",
+    "hours_per_year": 8760,
+    "fte": 4.211538461538462,
+    "rate": 65,
+    "hired": 569400,
+    "overtime": 854100.0,
+    "agency": 1138800.0
+   },
+   {
+    "task": "Case manager time to screen every occupied inpatient chart for discharge barriers each morning, 3 min each",
+    "hours_per_year": 5146.500000000001,
+    "fte": 2.4742788461538465,
+    "rate": 65,
+    "hired": 334522.50000000006,
+    "overtime": 501783.7500000001,
+    "agency": 669045.0000000001
+   },
+   {
+    "task": "Bed manager time to build unit-by-unit bed forecasts by phone, 4 times a day for 45 min",
+    "hours_per_year": 1095.0,
+    "fte": 0.5264423076923077,
+    "rate": 65,
+    "hired": 71175.0,
+    "overtime": 106762.5,
+    "agency": 142350.0
+   }
+  ],
+  "total": {
+   "hours_per_year": 15001.5,
+   "fte": 7.212259615384616,
+   "hired": 975097.5,
+   "overtime": 1462646.25,
+   "agency": 1950195.0
+  },
+  "tool_per_year": 210252.075,
+  "tool_vs_hiring_ratio": 4.637754466870303
+ },
+ "value": {
+  "ed_room_hours_freed": {
+   "mean": 3713.323522626397,
+   "min": 3125.358234086997,
+   "max": 4525.099472530262
+  },
+  "ed_rooms_around_the_clock": {
+   "mean": 0.42389537929525084,
+   "min": 0.35677605411952024,
+   "max": 0.5165638667271988
+  },
+  "capacity_value": {
+   "mean": 1299663.232919239,
+   "min": 1093875.381930449,
+   "max": 1583784.8153855915
+  },
+  "minutes_saved_per_admission": {
+   "mean": 16.38230965864587,
+   "min": 13.78834515038381,
+   "max": 19.96367414351586
+  },
+  "walkout_relative_reduction": {
+   "mean": 0.11757684701104877,
+   "min": 0.08901251738525727,
+   "max": 0.13820078226857885
+  },
+  "walkouts_avoided": {
+   "mean": 399.76127983756584,
+   "min": 302.6425591098747,
+   "max": 469.8826597131681
+  },
+  "walkout_revenue": {
+   "mean": 299820.95987817436,
+   "min": 226981.91933240602,
+   "max": 352411.99478487606
+  },
+  "overtime_nurse_hours_avoided": {
+   "mean": 232.0827201641498,
+   "min": 195.33488963043732,
+   "max": 282.81871703314135
+  },
+  "overtime_avoided": {
+   "mean": 22628.065216004605,
+   "min": 19045.151738967637,
+   "max": 27574.82491073128
+  },
+  "cash_value": {
+   "mean": 322449.025094179,
+   "min": 248246.13833072092,
+   "max": 371457.1465238437
+  },
+  "method": {
+   "capacity_value": "ED room-hours freed per year (paired simulation, scaled to the brief's 13,600 admissions) x the brief's $350 per boarded ED room-hour. Capacity, not cash.",
+   "walkout_revenue": "Relative drop in walkouts in the simulation x the brief's 4.0% of 85,000 visits x $1,500 net revenue per visit x 50% kept (the rest would have come back). Cash, and part of the capacity value, so never added to it.",
+   "overtime_avoided": "ED room-hours freed x 0.25 nurse-hours per boarded patient-hour x 25% on overtime x $65 x 1.5."
+  },
+  "least_certain": [
+   "Adoption: the share of flags staff act on (50% in the Cautious scenario). The adoption table shows the range at 25% to 100%.",
+   "The bed board's 25% cut in bed turnover delays (Expected and Full rollout only): no study we found backs it.",
+   "Discharge time recovered per acted-on barrier (1 h default, tested 0 to 4 h).",
+   "EHR vendor interface fees: need a quote.",
+   "Walkouts kept as revenue (50%) and nursing on overtime (25%).",
+   "The simulation itself: synthetic patients calibrated to the brief, not Halvian's records."
+  ]
+ },
+ "roi": {
+  "run_cost_per_year": 210252.075,
+  "monthly_cost": [
+   52456.25,
+   52456.25,
+   52456.25,
+   52456.25,
+   52456.25,
+   52456.25,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668,
+   24684.916666666668
+  ],
+  "cash": {
+   "value_per_year": {
+    "mean": 322449.025094179,
+    "min": 248246.13833072092,
+    "max": 371457.1465238437
+   },
+   "roi_per_year": {
+    "mean": 0.533630643570005,
+    "min": 0.18070719792287854,
+    "max": 0.7667228564752271
+   },
+   "net_per_year": {
+    "mean": 112196.95009417896,
+    "min": 37994.06333072091,
+    "max": 161205.07152384368
+   },
+   "value_18_months": 300129.3960840293,
+   "cost_18_months": 610956.5,
+   "net_18_months": -310827.1039159707,
+   "monthly_value": [
+    0.0,
+    0.0,
+    0.0,
+    5995.4997088742375,
+    5995.4997088742375,
+    5995.4997088742375,
+    13435.37604559079,
+    13435.37604559079,
+    13435.37604559079,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158,
+    26870.75209118158
+   ],
+   "payback_month": 52,
+   "payback_month_range": [
+    38,
+    null
+   ]
+  },
+  "capacity": {
+   "value_per_year": {
+    "mean": 1299663.232919239,
+    "min": 1093875.381930449,
+    "max": 1583784.8153855915
+   },
+   "roi_per_year": {
+    "mean": 5.1814525869446895,
+    "min": 4.202685309671494,
+    "max": 6.5327904154362875
+   },
+   "net_per_year": {
+    "mean": 1089411.157919239,
+    "min": 883623.3069304491,
+    "max": 1373532.7403855915
+   },
+   "value_18_months": 1173870.3651781569,
+   "cost_18_months": 610956.5,
+   "net_18_months": 562913.8651781569,
+   "monthly_value": [
+    0.0,
+    0.0,
+    0.0,
+    12221.678791274257,
+    12221.678791274257,
+    12221.678791274257,
+    54152.63470496829,
+    54152.63470496829,
+    54152.63470496829,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658,
+    108305.26940993658
+   ],
+   "payback_month": 12,
+   "payback_month_range": [
+    11,
+    13
+   ]
+  },
+  "cost_per_ed_room_hour_freed": 56.62099564416375,
+  "by_adoption": [
+   {
+    "adoption": 0.25,
+    "minutes_saved": 8.443389024674678,
+    "capacity_value": 669842.1959575244,
+    "cash_value": 179644.12875933925,
+    "cash_roi": -0.145577380107477,
+    "capacity_roi": 2.1859005242042167
+   },
+   {
+    "adoption": 0.5,
+    "minutes_saved": 16.38230965864587,
+    "capacity_value": 1299663.232919239,
+    "cash_value": 322449.025094179,
+    "cash_roi": 0.533630643570005,
+    "capacity_roi": 5.1814525869446895
+   },
+   {
+    "adoption": 0.75,
+    "minutes_saved": 20.193353925103697,
+    "capacity_value": 1602006.0780582263,
+    "cash_value": 376606.9677090007,
+    "cash_roi": 0.7912164134836751,
+    "capacity_roi": 6.6194543053057915
+   },
+   {
+    "adoption": 1.0,
+    "minutes_saved": 26.856606241615452,
+    "capacity_value": 2130624.09516816,
+    "cash_value": 489019.09557010076,
+    "cash_roi": 1.3258704846080627,
+    "capacity_roi": 9.133665007435289
+   }
+  ]
+ },
+ "goals": [
+  {
+   "id": "G1",
+   "kind": "operations",
+   "goal": "Shorter boarding",
+   "measure": "boarding_median_h",
+   "label": "Median boarding, admit decision to leaving the ED",
+   "unit": "h",
+   "baseline": 3.5,
+   "target": 3.4,
+   "simulated_relative_change": {
+    "mean": -0.05558435829189234,
+    "min": -0.06148967212596533,
+    "max": -0.04829672993584326
+   },
+   "simulated_with_tool": {
+    "mean": 3.3018965286959427,
+    "min": 3.1886954490163286,
+    "max": 3.387382809802754
+   },
+   "track": "Monthly median from the EHR: admit decision to leaving the ED room, all admissions.",
+   "if_off_track": "Two months off track: review the decision log for unworked flags and slow bed turnover; if under 40% of flags are acted on, run unit huddles and retrain; if flags are acted on but beds still open late, move discharge work earlier at rounds."
+  },
+  {
+   "id": "G2",
+   "kind": "operations",
+   "goal": "Fewer patients leave before being seen",
+   "measure": "lwbs_pct",
+   "label": "Share of arrivals who leave before a provider sees them",
+   "unit": "%",
+   "baseline": 4.0,
+   "target": 3.6,
+   "simulated_relative_change": {
+    "mean": -0.11757684701104877,
+    "min": -0.13820078226857885,
+    "max": -0.08901251738525727
+   },
+   "simulated_with_tool": {
+    "mean": 4.895860625957431,
+    "min": 3.040618243709462,
+    "max": 5.917961691362486
+   },
+   "track": "Monthly share of arrivals who leave before a provider sees them, from registration and EHR times.",
+   "if_off_track": "Two months off track: check whether freed rooms are reaching the waiting room (room turnaround), and escalate to the ED operations lead."
+  },
+  {
+   "id": "G3",
+   "kind": "equity",
+   "goal": "Narrow the gaps for Medicaid/CHIP and Uninsured patients",
+   "measure": "medicaid_wait_gap_min and uninsured_walkout_gap_pts",
+   "unit": "min and pp",
+   "parts": [
+    {
+     "measure": "Medicaid/CHIP minus Commercial, median minutes to a provider",
+     "unit": "min",
+     "baseline": 10,
+     "target": 9,
+     "simulated": {
+      "baseline": 12.265826109796762,
+      "with_tool": 10.838390134973451,
+      "verdict": "Narrowed"
+     }
+    },
+    {
+     "measure": "Uninsured minus Commercial, share leaving before being seen",
+     "unit": "pp",
+     "baseline": 2.8000000000000003,
+     "target": 2.6,
+     "simulated": {
+      "baseline": 3.609459161905506,
+      "with_tool": 3.2589001124878756,
+      "verdict": "Narrowed"
+     }
+    }
+   ],
+   "guardrail": "No payer gap may widen by more than 2 min or 0.3 pp for 2 months in a row.",
+   "track": "Monthly gap table by payer group (payer is used only to audit, never to predict).",
+   "if_off_track": "A gap that widens past the guardrail pauses the part of the tool involved for review by the oversight committee; a gap that stays flat for two quarters triggers the Phase 2 threshold review and targeted outreach with registration and social work."
+  },
+  {
+   "id": "G4",
+   "kind": "adoption and safe use",
+   "goal": "Staff use the tool and still think for themselves",
+   "measure": "acted_on_share, override_rate, override_reasons",
+   "unit": "%",
+   "parts": [
+    {
+     "measure": "Flags acted on (approved or worked)",
+     "unit": "%",
+     "baseline": null,
+     "target": 50.0
+    },
+    {
+     "measure": "Override rate (healthy band)",
+     "unit": "%",
+     "baseline": null,
+     "target": [
+      2.0,
+      40.0
+     ]
+    },
+    {
+     "measure": "Overrides with a recorded reason",
+     "unit": "%",
+     "baseline": null,
+     "target": 90.0
+    }
+   ],
+   "track": "The decision log: every approve and override with the person, time and reason.",
+   "if_off_track": "Under 2% overrides suggests rubber-stamping: audit a sample of approvals with the unit lead. Over 40% suggests mistrust or a model problem: review reasons and recalibrate."
+  }
+ ],
+ "milestones": [
+  {
+   "start": 1,
+   "end": 2,
+   "phase": "pilot",
+   "milestone": "Set up: governance charter, read-only EHR feeds, security review, data quality checks",
+   "owner": "Tool owner (clinical informatics) with IT security",
+   "done_when": "Feeds pass daily data-quality checks for 14 days; the security assessment has no open high findings"
+  },
+  {
+   "start": 2,
+   "end": 3,
+   "phase": "pilot",
+   "milestone": "Silent mode: the tool scores every patient on Halvian's own data and shows nothing",
+   "owner": "Data scientist",
+   "done_when": "Precision, calibration and the bias test meet the pilot gates on Halvian's data"
+  },
+  {
+   "start": 3,
+   "end": 3,
+   "phase": "pilot",
+   "milestone": "Training: 2-hour sessions for pilot users, super-users on every shift, a patient advisory session",
+   "owner": "Nurse educator with the tool owner",
+   "done_when": "At least 90% of pilot users trained"
+  },
+  {
+   "start": 4,
+   "end": 4,
+   "phase": "pilot",
+   "milestone": "Supervised go-live on Medicine A: ED bed requests for the unit and its rounds list; every recommendation needs a person to approve or override it",
+   "owner": "Bed manager and Medicine A nurse manager",
+   "done_when": "30 days live with no safety event linked to the tool"
+  },
+  {
+   "start": 4,
+   "end": 6,
+   "phase": "pilot",
+   "milestone": "Weekly huddles with users; monthly oversight committee reviews adoption, overrides and equity",
+   "owner": "AI oversight committee",
+   "done_when": "Every override reason reviewed; issues logged and closed"
+  },
+  {
+   "start": 6,
+   "end": 6,
+   "phase": "pilot",
+   "milestone": "Pilot review: go or no-go for Phase 2 against the pilot gates",
+   "owner": "Chief medical and nursing officers with the oversight committee",
+   "done_when": "Every pilot gate met"
+  },
+  {
+   "start": 7,
+   "end": 9,
+   "phase": "scale",
+   "milestone": "Adjust from pilot results (alert threshold, workflow, the note reader's role), then add Medicine B and Telemetry",
+   "owner": "Tool owner",
+   "done_when": "Gates still met on the new units after 30 days"
+  },
+  {
+   "start": 10,
+   "end": 12,
+   "phase": "scale",
+   "milestone": "Add Surgery, Step-down and ICU; standby server and a downtime drill on every unit",
+   "owner": "IT and nursing operations",
+   "done_when": "Failover and the phone-and-whiteboard downtime drill pass"
+  },
+  {
+   "start": 12,
+   "end": 12,
+   "phase": "scale",
+   "milestone": "Year 1 review: goals against targets, budget, retrain or retire decision",
+   "owner": "Oversight committee with finance",
+   "done_when": "Decision recorded; budget for the next year approved"
+  },
+  {
+   "start": 13,
+   "end": 18,
+   "phase": "scale",
+   "milestone": "Optimize: quarterly retraining check, annual bias audit, refresher training; move the tool into the operating budget",
+   "owner": "Tool owner",
+   "done_when": "Ownership and the yearly run cost in the operating plan"
+  },
+  {
+   "start": 18,
+   "end": 18,
+   "phase": "scale",
+   "milestone": "Month 18 review against the four goals: continue, extend to another area, or retire",
+   "owner": "Executive board",
+   "done_when": "Goals met or a written recovery plan"
+  }
+ ],
+ "pilot_gates": [
+  {
+   "gate": "Admission flags are right often enough",
+   "threshold": "precision at least 60%",
+   "synthetic_value": 0.6790697674418604,
+   "status": "Met in the synthetic test",
+   "source": "models/metrics.json admission.deployed_policy.precision"
+  },
+  {
+   "gate": "Rounds-list flags are right often enough",
+   "threshold": "precision at least 55%",
+   "synthetic_value": 0.631253223310985,
+   "status": "Met in the synthetic test",
+   "source": "models/metrics.json discharge.at_threshold.precision"
+  },
+  {
+   "gate": "Barriers in notes are real when case managers check",
+   "threshold": "at least 90% confirmed",
+   "synthetic_value": 0.9933665008291874,
+   "status": "Met in the synthetic test",
+   "source": "models/metrics.json note_reader (reader the app shows)"
+  },
+  {
+   "gate": "No payer group is missed more than its triage levels and ages explain",
+   "threshold": "unexplained miss rate within 5 points",
+   "synthetic_value": 2.5831892061573325,
+   "status": "Met in the synthetic test",
+   "source": "models/metrics.json admission.fairness_case_mix"
+  },
+  {
+   "gate": "The pilot unit's patients are not worse off",
+   "threshold": "minutes saved per admission above zero in every run, no payer gap widened",
+   "synthetic_value": 0.595624939913025,
+   "status": "Met in the synthetic test",
+   "source": "models/scenarios.json results.pilot"
+  },
+  {
+   "gate": "Staff act on the flags",
+   "threshold": "at least 40% acted on",
+   "synthetic_value": null,
+   "status": "Measured in the pilot",
+   "source": "decision log"
+  },
+  {
+   "gate": "Overrides are explained",
+   "threshold": "at least 90% with a reason",
+   "synthetic_value": null,
+   "status": "Measured in the pilot",
+   "source": "decision log"
+  },
+  {
+   "gate": "Staff find it useful",
+   "threshold": "at least 60% say the flags help them plan",
+   "synthetic_value": null,
+   "status": "Measured in the pilot",
+   "source": "pilot survey"
+  },
+  {
+   "gate": "No safety event linked to the tool",
+   "threshold": "zero in 90 days",
+   "synthetic_value": null,
+   "status": "Measured in the pilot",
+   "source": "incident reporting system"
+  }
+ ],
+ "phase2": {
+  "question": "Should Phase 2 lower the base alert threshold?",
+  "options": [
+   {
+    "base_threshold": 0.5,
+    "minutes_saved": {
+     "mean": 25.46648798782442,
+     "min": 21.704937663791792,
+     "max": 29.43758599566613
+    },
+    "precision": 0.6352601156069364,
+    "recall": 0.3147193585337915,
+    "alerts_per_day": 18.82608695652174,
+    "case_gaps_narrowed": 3,
+    "case_gaps_total": 4,
+    "any_gap_widened": [],
+    "gaps": {
+     "Medicaid/CHIP vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Medicaid/CHIP vs Commercial | Left without being seen": "Narrowed",
+     "Medicare vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Medicare vs Commercial | Left without being seen": "Narrowed",
+     "Uninsured vs Commercial | Door-to-provider (median)": "Flat",
+     "Uninsured vs Commercial | Left without being seen": "Narrowed",
+     "Other (VA, workers' comp, auto) vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Other (VA, workers' comp, auto) vs Commercial | Left without being seen": "Flat"
+    }
+   },
+   {
+    "base_threshold": 0.6,
+    "minutes_saved": {
+     "mean": 19.07625718631462,
+     "min": 16.95374463852452,
+     "max": 21.630884651877864
+    },
+    "precision": 0.6613636363636364,
+    "recall": 0.25,
+    "alerts_per_day": 14.358695652173912,
+    "case_gaps_narrowed": 4,
+    "case_gaps_total": 4,
+    "any_gap_widened": [
+     "Other (VA, workers' comp, auto) vs Commercial | Left without being seen"
+    ],
+    "gaps": {
+     "Medicaid/CHIP vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Medicaid/CHIP vs Commercial | Left without being seen": "Narrowed",
+     "Medicare vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Medicare vs Commercial | Left without being seen": "Flat",
+     "Uninsured vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Uninsured vs Commercial | Left without being seen": "Narrowed",
+     "Other (VA, workers' comp, auto) vs Commercial | Door-to-provider (median)": "Flat",
+     "Other (VA, workers' comp, auto) vs Commercial | Left without being seen": "Widened"
+    }
+   },
+   {
+    "base_threshold": 0.7,
+    "minutes_saved": {
+     "mean": 16.38230965864587,
+     "min": 13.78834515038381,
+     "max": 19.96367414351586
+    },
+    "precision": 0.6790697674418604,
+    "recall": 0.20904925544100803,
+    "alerts_per_day": 11.695652173913043,
+    "case_gaps_narrowed": 3,
+    "case_gaps_total": 4,
+    "any_gap_widened": [],
+    "gaps": {
+     "Medicaid/CHIP vs Commercial | Door-to-provider (median)": "Narrowed",
+     "Medicaid/CHIP vs Commercial | Left without being seen": "Narrowed",
+     "Medicare vs Commercial | Door-to-provider (median)": "Flat",
+     "Medicare vs Commercial | Left without being seen": "Flat",
+     "Uninsured vs Commercial | Door-to-provider (median)": "Flat",
+     "Uninsured vs Commercial | Left without being seen": "Narrowed",
+     "Other (VA, workers' comp, auto) vs Commercial | Door-to-provider (median)": "Flat",
+     "Other (VA, workers' comp, auto) vs Commercial | Left without being seen": "Flat"
+    }
+   }
+  ],
+  "rule": "Pick the lowest threshold whose flag precision stays at or above the pilot gate and whose gap verdicts narrow the Medicaid/CHIP and Uninsured gaps without widening any other; confirm on pilot data before changing it."
+ },
+ "kpis": [
+  {
+   "kpi": "Median boarding",
+   "kind": "operations",
+   "unit": "h",
+   "baseline": 3.5,
+   "direction": "down",
+   "target": 3.4,
+   "simulated": "-7% to -4%"
+  },
+  {
+   "kpi": "Share leaving before being seen",
+   "kind": "operations",
+   "unit": "%",
+   "baseline": 4.0,
+   "target": 3.6,
+   "direction": "down",
+   "simulated": "-14% to -8%"
+  },
+  {
+   "kpi": "Median minutes to a provider",
+   "kind": "operations",
+   "unit": "min",
+   "baseline": 55,
+   "direction": "down",
+   "target": 53,
+   "simulated": "-6% to -4%"
+  },
+  {
+   "kpi": "ED room-hours freed per year",
+   "kind": "operations",
+   "unit": "h",
+   "baseline": 0,
+   "direction": "up",
+   "target": 2800,
+   "simulated": "2,200 h to 4,600 h"
+  },
+  {
+   "kpi": "Medicaid/CHIP minus Commercial, median minutes to a provider",
+   "kind": "equity",
+   "unit": "min",
+   "baseline": 10,
+   "target": 9,
+   "direction": "down",
+   "simulated": "gap narrowed"
+  },
+  {
+   "kpi": "Uninsured minus Commercial, share leaving before being seen",
+   "kind": "equity",
+   "unit": "pp",
+   "baseline": 2.8000000000000003,
+   "target": 2.6,
+   "direction": "down",
+   "simulated": "gap narrowed"
+  },
+  {
+   "kpi": "Flags acted on",
+   "kind": "use",
+   "unit": "%",
+   "baseline": null,
+   "direction": "up",
+   "target": 50.0,
+   "simulated": "50% assumed in the simulation"
+  },
+  {
+   "kpi": "Override rate",
+   "kind": "use",
+   "unit": "%",
+   "baseline": null,
+   "direction": "band",
+   "target": [
+    2.0,
+    40.0
+   ],
+   "simulated": "measured in the pilot"
+  },
+  {
+   "kpi": "Cost per ED room-hour freed (cost to serve)",
+   "kind": "cost",
+   "unit": "$",
+   "baseline": null,
+   "direction": "down",
+   "target": 175.0,
+   "simulated": "$40 to $100"
+  },
+  {
+   "kpi": "Yearly ROI on freed capacity (brief's $350 per room-hour)",
+   "kind": "ROI",
+   "unit": "x",
+   "baseline": null,
+   "target": 1.0,
+   "direction": "up",
+   "simulated": "200% to 700%"
+  },
+  {
+   "kpi": "Yearly cash ROI (recovered visits and overtime only)",
+   "kind": "ROI",
+   "unit": "x",
+   "baseline": null,
+   "target": 0.0,
+   "direction": "up",
+   "simulated": "10% to 80%"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "caveat": "Model estimate from a synthetic Halvian calibrated to the case brief. It shows which levers matter and how large the payoff could be under stated assumptions. It is not evidence from a real hospital.",
+ "break_even": {
+  "minutes_per_admission": 6,
+  "explanation": "The tool pays for itself when it saves about 6 minutes per admission: $500,000 a year / ($350 per bed-hour x 13,600 admissions a year) = 0.105 hours, about 6 minutes."
+ },
+ "scenarios": [
+  {
+   "name": "Cautious",
+   "settings": "Today's default settings: staff act on 50% of flags within about 1 hour, alert threshold 70% (moving with crowding), discharges on the rounds list 1 hour earlier, and no credit for the bed board.",
+   "minutes_saved_per_admission": [
+    10,
+    20
+   ],
+   "freed_capacity_per_year_usd_m": [
+    0.8,
+    1.6
+   ],
+   "provider_wait_change_min": [
+    -5,
+    -2
+   ],
+   "walkout_change_pts": [
+    -0.9,
+    -0.4
+   ]
+  },
+  {
+   "name": "Expected",
+   "settings": "Today's defaults plus the Live Bed Board, which we assume cuts the housekeeping notification delay and bed request processing by 25%.",
+   "minutes_saved_per_admission": [
+    20,
+    30
+   ],
+   "freed_capacity_per_year_usd_m": [
+    1.6,
+    2.4
+   ],
+   "provider_wait_change_min": [
+    -10,
+    -5
+   ],
+   "walkout_change_pts": [
+    -1.0,
+    -0.6
+   ]
+  },
+  {
+   "name": "Full rollout",
+   "settings": "Staff act on 75% of flags, alert threshold 60% (moving with crowding), discharges on the rounds list 2 hours earlier, and the bed board on.",
+   "minutes_saved_per_admission": [
+    35,
+    50
+   ],
+   "freed_capacity_per_year_usd_m": [
+    2.8,
+    4.0
+   ],
+   "provider_wait_change_min": [
+    -17,
+    -8
+   ],
+   "walkout_change_pts": [
+    -1.6,
+    -0.8
+   ]
+  }
+ ],
+ "parts": [
+  {
+   "part": "Admission flags",
+   "minutes_saved_per_admission": [
+    10,
+    15
+   ]
+  },
+  {
+   "part": "Discharge readiness",
+   "minutes_saved_per_admission": [
+    -5,
+    10
+   ]
+  },
+  {
+   "part": "Bed board",
+   "minutes_saved_per_admission": [
+    10,
+    15
+   ]
+  }
+ ],
+ "equity": [
+  {
+   "gap": "Medicaid/CHIP vs Commercial, wait to see a provider",
+   "verdict": "Narrowed"
+  },
+  {
+   "gap": "Medicaid/CHIP vs Commercial, leaving before being seen",
+   "verdict": "Narrowed"
+  },
+  {
+   "gap": "Medicare vs Commercial, wait to see a provider",
+   "verdict": "Narrowed"
+  },
+  {
+   "gap": "Medicare vs Commercial, leaving before being seen",
+   "verdict": "Flat"
+  },
+  {
+   "gap": "Uninsured vs Commercial, wait to see a provider",
+   "verdict": "Narrowed"
+  },
+  {
+   "gap": "Uninsured vs Commercial, leaving before being seen",
+   "verdict": "Narrowed"
+  },
+  {
+   "gap": "Other (VA, workers' comp, auto) vs Commercial, wait to see a provider",
+   "verdict": "Flat"
+  },
+  {
+   "gap": "Other (VA, workers' comp, auto) vs Commercial, leaving before being seen",
+   "verdict": "Flat"
+  }
+ ],
+ "staffing_alternative": [
+  {
+   "option": "Bed coordinator around the clock",
+   "annual_cost_usd": 310000,
+   "assumption": "One clerical bed coordinator on every shift, 24 hours a day all year (8,760 hours), at the brief's $35 an hour administrative rate."
+  },
+  {
+   "option": "Extra day-shift case manager",
+   "annual_cost_usd": 190000,
+   "assumption": "One more case manager on the 8-hour day shift every day of the year (2,920 hours), at the brief's $65 an hour nurse rate."
+  },
+  {
+   "option": "Surge-day nurse overtime",
+   "annual_cost_usd": 120000,
+   "assumption": "Two extra ED nurses on overtime for the day and evening shifts (16 hours each) on the busiest 10% of days (37 a year), at the brief's $65 an hour times 1.5."
+  }
+ ],
+ "tool_cost": {
+  "per_year_usd": [
+   370000,
+   430000
+  ],
+  "note": "Our ballpark of $550K to $650K over 18 months (the itemized budget comes to about $610K), spread evenly over 1.5 years; after Month 18 the running cost falls to about $210K a year."
+ },
+ "references": [
+  {
+   "source": "Johns Hopkins study of discharge predictions in multidisciplinary rounds",
+   "finding": "Feeding machine learning discharge predictions into daily rounds was followed by stays more than 12 hours shorter on 2 of 4 units (a medicine and a telemetry unit), with no change on the other two.",
+   "url": "https://pure.johnshopkins.edu/en/publications/machine-learning-based-hospital-discharge-predictions-can-support/"
+  },
+  {
+   "source": "Proactive Inpatient Bed Requests for ED Admissions (2026 preprint, simulation)",
+   "finding": "In a simulation, hourly bed requests driven by admission predictions cut ED boarding by 30 to 70%; it is a preprint, not a live deployment.",
+   "url": "https://arxiv.org/abs/2607.15432"
+  }
+ ],
+ "least_certain": "The least certain assumption is the bed board's 25% cut in bed turnover delays: no study we found backs it, it alone adds 10 to 15 minutes per admission, and so the Cautious range leaves it out."
+}
