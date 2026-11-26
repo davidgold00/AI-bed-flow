@@ -1,0 +1,326 @@
+{
+  "seed": 20261124,
+  "passed": 29,
+  "total": 29,
+  "checks": [
+    {
+      "Target": "ED visits per year: 85,000",
+      "Simulated": "85,082",
+      "Tolerance": "\u00b11%",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Payer share Medicaid/CHIP: 35%",
+      "Simulated": "35.0%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Payer share Medicare: 22%",
+      "Simulated": "22.0%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Payer share Commercial: 33%",
+      "Simulated": "32.9%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Payer share Uninsured: 8%",
+      "Simulated": "8.0%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Payer share Other (VA, workers' comp, auto): 2% (assumption A1)",
+      "Simulated": "2.1%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Admission rate: 16%",
+      "Simulated": "16.0%",
+      "Tolerance": "\u00b11 pt",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Busiest day: Monday",
+      "Simulated": "Monday",
+      "Tolerance": "Monday highest",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Winter respiratory season adds about 20%",
+      "Simulated": "19.6%",
+      "Tolerance": "15 to 25%",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Weekday arrivals peak in the morning and evening",
+      "Simulated": "14.3 and 13.1 per hour vs 12.5 mid-afternoon",
+      "Tolerance": "Both peaks present",
+      "Pass": true,
+      "Group": "Volume"
+    },
+    {
+      "Target": "Median door-to-provider, all: 55 min",
+      "Simulated": "55.2 min",
+      "Tolerance": "\u00b15%",
+      "Pass": true,
+      "Group": "Waits"
+    },
+    {
+      "Target": "Median door-to-provider, Commercial: 48 min",
+      "Simulated": "49.3 min",
+      "Tolerance": "\u00b15%",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "Median door-to-provider, Medicaid/CHIP: 58 min",
+      "Simulated": "59.3 min",
+      "Tolerance": "\u00b15%",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "Median door-to-provider, Uninsured: 64 min",
+      "Simulated": "63.3 min",
+      "Tolerance": "\u00b15%",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "LWBS, all: 4.0%",
+      "Simulated": "4.00%",
+      "Tolerance": "\u00b10.4 pt",
+      "Pass": true,
+      "Group": "Waits"
+    },
+    {
+      "Target": "LWBS, Commercial: 3.0%",
+      "Simulated": "3.27%",
+      "Tolerance": "\u00b10.4 pt",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "LWBS, Medicaid/CHIP: 4.6%",
+      "Simulated": "4.55%",
+      "Tolerance": "\u00b10.4 pt",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "LWBS, Uninsured: 5.8%",
+      "Simulated": "5.69%",
+      "Tolerance": "\u00b10.4 pt",
+      "Pass": true,
+      "Group": "Equity gaps"
+    },
+    {
+      "Target": "Median boarding: 3.5 h",
+      "Simulated": "3.52 h",
+      "Tolerance": "\u00b15%",
+      "Pass": true,
+      "Group": "Boarding"
+    },
+    {
+      "Target": "Lower-urgency (ESI 4 and 5) waits on surge days: 2+ h",
+      "Simulated": "215 min median on the busiest 10% of days",
+      "Tolerance": "at least 120 min",
+      "Pass": true,
+      "Group": "Waits"
+    },
+    {
+      "Target": "Inpatient occupancy: about 88%",
+      "Simulated": "88.1%",
+      "Tolerance": "\u00b12 pt",
+      "Pass": true,
+      "Group": "Beds"
+    },
+    {
+      "Target": "Open inpatient beds: about 40",
+      "Simulated": "38.2",
+      "Tolerance": "36 to 44",
+      "Pass": true,
+      "Group": "Beds"
+    },
+    {
+      "Target": "Registration: 5 to 10 min",
+      "Simulated": "7.3 min median",
+      "Tolerance": "inside range",
+      "Pass": true,
+      "Group": "Process times"
+    },
+    {
+      "Target": "Triage: 5 to 15 min",
+      "Simulated": "9.5 min median",
+      "Tolerance": "inside range",
+      "Pass": true,
+      "Group": "Process times"
+    },
+    {
+      "Target": "Evaluation and treatment: 2 to 3 h",
+      "Simulated": "2.36 h median",
+      "Tolerance": "inside range",
+      "Pass": true,
+      "Group": "Process times"
+    },
+    {
+      "Target": "ED discharge: 20 to 40 min",
+      "Simulated": "30.0 min median",
+      "Tolerance": "inside range",
+      "Pass": true,
+      "Group": "Process times"
+    },
+    {
+      "Target": "Stays with a non-medical discharge barrier: about 1 in 5 (assumption A10)",
+      "Simulated": "19.0%",
+      "Tolerance": "17 to 23%",
+      "Pass": true,
+      "Group": "Beds"
+    },
+    {
+      "Target": "Discharges cluster before ED admission requests (assumption A9)",
+      "Simulated": "discharges 13.8h vs ED admit decisions 14.2h (median hour)",
+      "Tolerance": "discharges earlier",
+      "Pass": true,
+      "Group": "Beds"
+    },
+    {
+      "Target": "Little's law: occupied beds = admissions/day \u00d7 average stay",
+      "Simulated": "281.8 occupied vs 64.2/day \u00d7 4.39 d = 282.0",
+      "Tolerance": "within 3%",
+      "Pass": true,
+      "Group": "Beds"
+    }
+  ],
+  "info": [
+    {
+      "Measure": "Median door-to-provider, Medicare (not in brief, emerges)",
+      "Simulated": "56.3 min"
+    },
+    {
+      "Measure": "Median door-to-provider, Other (not in brief)",
+      "Simulated": "49.4 min"
+    },
+    {
+      "Measure": "LWBS, Medicare (not in brief)",
+      "Simulated": "3.68%"
+    },
+    {
+      "Measure": "Mean boarding (long tail)",
+      "Simulated": "4.90 h"
+    },
+    {
+      "Measure": "ED admissions in the year",
+      "Simulated": "13,609"
+    },
+    {
+      "Measure": "All inpatient admissions per day",
+      "Simulated": "64.2"
+    },
+    {
+      "Measure": "Average length of stay",
+      "Simulated": "4.39 days"
+    },
+    {
+      "Measure": "Occupancy, Medicine A",
+      "Simulated": "90.8%"
+    },
+    {
+      "Measure": "Occupancy, Medicine B",
+      "Simulated": "89.3%"
+    },
+    {
+      "Measure": "Occupancy, Telemetry",
+      "Simulated": "88.4%"
+    },
+    {
+      "Measure": "Occupancy, Surgery",
+      "Simulated": "89.1%"
+    },
+    {
+      "Measure": "Occupancy, Step-down",
+      "Simulated": "84.6%"
+    },
+    {
+      "Measure": "Occupancy, ICU",
+      "Simulated": "75.1%"
+    }
+  ],
+  "metrics": {
+    "visits": 85082,
+    "admission_rate": 0.15995157612656025,
+    "busiest_weekday": "Monday",
+    "winter_uplift": 0.19625619666506733,
+    "morning_peak": 14.268199233716475,
+    "evening_peak": 13.134099616858238,
+    "afternoon_trough": 12.490421455938698,
+    "has_two_peaks": true,
+    "d2p_median": 55.23097522335593,
+    "lwbs_rate": 0.04002021579182436,
+    "boarding_median_h": 3.516843455658333,
+    "boarding_mean_h": 4.901555506127871,
+    "surge_low_acuity_d2p": 215.09668996551773,
+    "surge_days": 39,
+    "occupied_mean": 281.76666666666665,
+    "occupancy": 0.8805208333333333,
+    "open_beds_mean": 38.23333333333335,
+    "registration_median": 7.267606784155813,
+    "triage_median": 9.524388414205006,
+    "eval_treat_median_h": 2.360461555037182,
+    "ed_discharge_median": 30.03896216582507,
+    "barrier_share": 0.18950064020486557,
+    "discharge_median_hour": 13.764928776140732,
+    "admit_request_median_hour": 14.170301100755266,
+    "discharge_peak_hour": 13,
+    "admit_request_peak_hour": 19,
+    "admissions_per_day": 64.1917808219178,
+    "alos_days": 4.393593769529931,
+    "littles_law_beds": 282.032608274209,
+    "ed_admissions": 13609,
+    "medicare_d2p": 56.29120018822141
+  },
+  "unit_occupancy": {
+    "Medicine A": 0.908083975456621,
+    "Medicine B": 0.8926114515741409,
+    "Telemetry": 0.8836000614682121,
+    "Surgery": 0.8906954551940639,
+    "Step-down": 0.8460973173515982,
+    "ICU": 0.7509762652207002
+  },
+  "replication_years": [
+    {
+      "seed": 20261125,
+      "passed": 25,
+      "total": 29,
+      "failed": [
+        "LWBS, all: 4.0% (simulated 4.50%)",
+        "LWBS, Commercial: 3.0% (simulated 3.53%)",
+        "LWBS, Medicaid/CHIP: 4.6% (simulated 5.16%)",
+        "LWBS, Uninsured: 5.8% (simulated 6.65%)"
+      ]
+    },
+    {
+      "seed": 20261126,
+      "passed": 29,
+      "total": 29,
+      "failed": []
+    }
+  ],
+  "open_calibration_misses": [],
+  "notes": "Only the main synthetic year (config.SEED) is calibrated. replication_years shows the same checks on the two other synthetic years used for impact replications; their misses are ordinary year-to-year variation, not calibration targets."
+}

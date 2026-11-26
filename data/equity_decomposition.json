@@ -1,0 +1,30 @@
+[
+ {
+  "Scenario":"No payer-specific terms",
+  "Medicaid\/CHIP vs Commercial, wait (min)":5.65,
+  "Uninsured vs Commercial, wait (min)":1.3,
+  "Medicaid\/CHIP vs Commercial, LWBS (pts)":0.83,
+  "Uninsured vs Commercial, LWBS (pts)":0.33
+ },
+ {
+  "Scenario":"Mechanisms only",
+  "Medicaid\/CHIP vs Commercial, wait (min)":10.18,
+  "Uninsured vs Commercial, wait (min)":16.3,
+  "Medicaid\/CHIP vs Commercial, LWBS (pts)":0.87,
+  "Uninsured vs Commercial, LWBS (pts)":1.47
+ },
+ {
+  "Scenario":"Calibrated (mechanisms plus explicit adjustments)",
+  "Medicaid\/CHIP vs Commercial, wait (min)":9.99,
+  "Uninsured vs Commercial, wait (min)":13.98,
+  "Medicaid\/CHIP vs Commercial, LWBS (pts)":1.28,
+  "Uninsured vs Commercial, LWBS (pts)":2.42
+ },
+ {
+  "Scenario":"Case brief target",
+  "Medicaid\/CHIP vs Commercial, wait (min)":10.0,
+  "Uninsured vs Commercial, wait (min)":16.0,
+  "Medicaid\/CHIP vs Commercial, LWBS (pts)":1.6,
+  "Uninsured vs Commercial, LWBS (pts)":2.8
+ }
+]

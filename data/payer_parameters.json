@@ -1,0 +1,90 @@
+[
+ {
+  "Type":"Mechanism",
+  "Parameter":"Arrival-timing tilt, evenings and nights",
+  "Config name":"payer_evening_tilt",
+  "Unit":"extra share of visits 17:00 to 07:00",
+  "Medicaid\/CHIP":0.15,
+  "Medicare":0.0,
+  "Commercial":-0.4,
+  "Uninsured":0.45,
+  "Other (VA, workers' comp, auto)":0.0
+ },
+ {
+  "Type":"Mechanism",
+  "Parameter":"Arrival-timing tilt, weekends",
+  "Config name":"payer_weekend_tilt",
+  "Unit":"extra share of weekend visits",
+  "Medicaid\/CHIP":0.1,
+  "Medicare":-0.05,
+  "Commercial":0.0,
+  "Uninsured":0.1,
+  "Other (VA, workers' comp, auto)":0.0
+ },
+ {
+  "Type":"Mechanism",
+  "Parameter":"Lower average visit severity",
+  "Config name":"payer_low_acuity_shift",
+  "Unit":"shift of latent severity (more ESI 4 and 5)",
+  "Medicaid\/CHIP":-0.1,
+  "Medicare":0.8,
+  "Commercial":0.0,
+  "Uninsured":0.25,
+  "Other (VA, workers' comp, auto)":0.0
+ },
+ {
+  "Type":"Mechanism",
+  "Parameter":"Extra low-acuity visits at peak hours",
+  "Config name":"payer_peak_low_acuity_extra",
+  "Unit":"added shift at 10-13 and 17-22",
+  "Medicaid\/CHIP":0.15,
+  "Medicare":0.0,
+  "Commercial":0.0,
+  "Uninsured":0.2,
+  "Other (VA, workers' comp, auto)":0.0
+ },
+ {
+  "Type":"Mechanism",
+  "Parameter":"More non-medical discharge barriers",
+  "Config name":"barrier_payer_logodds",
+  "Unit":"log-odds added to barrier chance",
+  "Medicaid\/CHIP":0.65,
+  "Medicare":0.0,
+  "Commercial":0.0,
+  "Uninsured":0.75,
+  "Other (VA, workers' comp, auto)":0.0
+ },
+ {
+  "Type":"Mechanism",
+  "Parameter":"Tilt toward transport, home care, insurance barriers",
+  "Config name":"barrier_type_payer_tilt",
+  "Unit":"weight multiplier",
+  "Medicaid\/CHIP":1.6,
+  "Medicare":1.0,
+  "Commercial":1.0,
+  "Uninsured":1.8,
+  "Other (VA, workers' comp, auto)":1.0
+ },
+ {
+  "Type":"Explicit adjustment",
+  "Parameter":"Patience before leaving unseen",
+  "Config name":"patience_mult_by_payer",
+  "Unit":"multiplier on patience (below 1 = leaves sooner)",
+  "Medicaid\/CHIP":0.95,
+  "Medicare":1.0,
+  "Commercial":1.0,
+  "Uninsured":0.9,
+  "Other (VA, workers' comp, auto)":1.0
+ },
+ {
+  "Type":"Explicit adjustment",
+  "Parameter":"Extra registration minutes",
+  "Config name":"registration_extra_by_payer",
+  "Unit":"minutes added to registration",
+  "Medicaid\/CHIP":0.0,
+  "Medicare":0.0,
+  "Commercial":0.0,
+  "Uninsured":0.0,
+  "Other (VA, workers' comp, auto)":0.0
+ }
+]
